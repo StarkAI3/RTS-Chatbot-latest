@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTS Saathi</title>
+    <style>
+        /* RTS Chatbot Widget Styles */
+        .rts-chatbot-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .rts-floating-btn {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #c77dff 100%);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(199, 125, 255, 0.3);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .midc-floating-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .rts-chatbot-container {
+            width: 450px;
+            height: 600px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+            position: absolute;
+            bottom: 90px;
+            right: 0;
+            animation: slideUp 0.4s ease-out;
+        }
+
+        .rts-chatbot-container.show {
+            display: flex;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .rts-chatbot-header {
+            background: linear-gradient(135deg, #c77dff 100%);
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .rts-chatbot-title {
+            font-size: 18px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .rts-chatbot-icon {
+            width: 35px;
+            height: 35px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .rts-close-btn {
+            width: 35px;
+            height: 35px;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .rts-close-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+
+        .rts-header-close-btn {
+            width: 30px;
+            height: 30px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            margin-left: auto;
+        }
+
+        .rts-header-close-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+        }
+
+        .rts-chat-area {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .rts-message {
+            max-width: 85%;
+            padding: 14px 18px;
+            border-radius: 20px;
+            word-wrap: break-word;
+            white-space: pre-line;
+            animation: messageSlide 0.3s ease-out;
+            line-height: 1.6;
+        }
+
+        @keyframes messageSlide {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .rts-message.assistant {
+            background: linear-gradient(135deg, #f0e6ff 0%, #e1c3ff 100%);
+            color: #8b5a9b;
+            align-self: flex-start;
+            border-bottom-left-radius: 8px;
+        }
+
+        .rts-message.user {
+            background: linear-gradient(135deg, #8b5a9b 0%, #a76bb0 100%);
+            color: white;
+            align-self: flex-end;
+            border-bottom-right-radius: 8px;
+        }
+
+        .rts-message a {
+            color: #c77dff;
+            text-decoration: underline;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            word-break: break-all;
+        }
+
+        .rts-message a:hover {
+            color: #b366ff;
+            text-decoration: none;
+            background-color: rgba(199, 125, 255, 0.1);
+            padding: 1px 2px;
+            border-radius: 2px;
+        }
+
+        .rts-message.user a {
+            color: #e1c3ff;
+            text-decoration: underline;
+            transition: all 0.2s ease;
+            word-break: break-all;
+        }
+
+        .rts-message.user a:hover {
+            color: #f0e6ff;
+            text-decoration: none;
+            background-color: rgba(225, 195, 255, 0.2);
+            padding: 1px 2px;
+            border-radius: 2px;
+        }
+
+        /* List formatting within messages */
+        .rts-message ul, .rts-message ol {
+            margin: 8px 0;
+            padding-left: 20px;
+        }
+
+        .rts-message li {
+            margin: 4px 0;
+            line-height: 1.5;
+        }
+
+        .rts-message p {
+            margin: 8px 0;
+        }
+
+        /* Mobile responsive for links */
+        @media (max-width: 480px) {
+            .rts-message a {
+                font-size: 13px;
+            }
+
+            .rts-message.user a {
+                font-size: 13px;
+            }
+        }
+
+        .rts-sample-questions {
+            display: flex;
+            gap: 12px;
+            padding: 15px 20px;
+            overflow-x: auto;
+            scrollbar-width: thin;
+            scrollbar-color: #ccc transparent;
+            background: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .rts-sample-questions::-webkit-scrollbar {
+            height: 4px;
+        }
+
+        .rts-sample-questions::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .rts-sample-questions::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 2px;
+        }
+
+        .rts-sample-question {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            padding: 10px 18px;
+            font-size: 13px;
+            color: #666;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+            font-weight: 500;
+        }
+
+        .rts-sample-question:hover {
+            background: #c77dff;
+            color: white;
+            border-color: #c77dff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(199, 125, 255, 0.3);
+        }
+
+        .rts-input-area {
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .rts-message-input {
+            flex: 1;
+            padding: 14px 18px;
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            font-size: 14px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .rts-message-input:focus {
+            border-color: #8b5a9b;
+            box-shadow: 0 0 0 3px rgba(139, 90, 155, 0.1);
+        }
+
+        .rts-send-btn {
+            background: linear-gradient(135deg, #c77dff 100%);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 14px 24px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .rts-send-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(199, 125, 255, 0.3);
+        }
+
+        .rts-send-btn:active {
+            transform: translateY(0);
+        }
+
+        .rts-typing-indicator {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #666;
+            font-style: italic;
+            padding: 14px 18px;
+            background: #f0e6ff;
+            border-radius: 20px;
+            max-width: 85%;
+            align-self: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .rts-typing-dots {
+            display: flex;
+            gap: 4px;
+        }
+
+        .rts-typing-dot {
+            width: 7px;
+            height: 7px;
+            background: #666;
+            border-radius: 50%;
+            animation: typing 1.4s infinite ease-in-out;
+        }
+
+        .rts-typing-dot:nth-child(1) { animation-delay: -0.32s; }
+        .rts-typing-dot:nth-child(2) { animation-delay: -0.16s; }
+
+        @keyframes typing {
+            0%, 80%, 100% {
+                transform: scale(0);
+                opacity: 0.5;
+            }
+            40% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .rts-welcome-message {
+            text-align: center;
+            padding: 25px 20px;
+            color: #666;
+            background: white;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+
+        .rts-welcome-message h3 {
+            color: #8b5a9b;
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+
+        .rts-welcome-message p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 480px) {
+            .rts-chatbot-container {
+                width: 100vw;
+                height: 100vh;
+                border-radius: 0;
+                bottom: 0;
+                right: 0;
+            }
+
+            .rts-floating-btn {
+                bottom: 15px;
+                right: 15px;
+                width: 60px;
+                height: 60px;
+                font-size: 24px;
+            }
+        }
+
+        /* Hide scrollbar for webkit browsers */
+        .rts-chat-area::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .rts-chat-area::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 3px;
+        }
+
+        .rts-chat-area::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 3px;
+        }
+
+        .rts-chat-area::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8;
+        }
+    </style>
+</head>
+<body>
+    <!-- RTS Chatbot Widget -->
+    <div class="rts-chatbot-widget">
+        <!-- Floating Button -->
+        <button class="rts-floating-btn" onclick="toggleRTSChatbot()">
+            <img src="/static/RTS-logo.jpg" alt="RTS Logo" style="width: 32px; height: 32px; border-radius: 50%;">
+        </button>
+
+        <!-- Chatbot Container -->
+        <div class="rts-chatbot-container" id="rtsChatbotContainer">
+            <!-- Header -->
+            <div class="rts-chatbot-header">
+                <div class="rts-chatbot-title">
+                    <div class="rts-chatbot-icon">
+                        <img src="/static/RTS-logo.jpg" alt="RTS Logo" style="width: 24px; height: 24px; border-radius: 50%;">
+                    </div>
+                    RTS Assistant
+                </div>
+                <button class="rts-header-close-btn" onclick="toggleRTSChatbot()" title="Close Chat">
+                    ✕
+                </button>
+            </div>
+
+            <!-- Chat Area -->
+            <div class="rts-chat-area" id="rtsChatArea">
+
+                <div class="rts-welcome-message">
+                    <h3>👋 Welcome to RTS Assistant!</h3>
+                    <p>I'm here to help you find information about services provided by Pune Municipal Corporation. How can I assist you today?</p>
+                </div>
+            </div>
+
+            <!-- Sample Questions -->
+            <div class="rts-sample-questions">
+                <div class="rts-sample-question" onclick="askRTSQuestion('How do I get a marriage certificate?')">
+                    Marriage certificate
+                </div>
+                <div class="rts-sample-question" onclick="askRTSQuestion('What documents do I need for birth certificate?')">
+                    Birth certificate documents
+                </div>
+                <div class="rts-sample-question" onclick="askRTSQuestion('How to apply for property tax assessment?')">
+                    Property tax assessment
+                </div>
+                <div class="rts-sample-question" onclick="askRTSQuestion('जन्म प्रमाणपत्र कसे मिळवावे?')">
+                    जन्म प्रमाणपत्र कसे मिळवावे
+                </div>
+                <div class="rts-sample-question" onclick="askRTSQuestion('मालमत्ता कर भरणा कसा करावा?')">
+                    मालमत्ता कर भरणा
+                </div>
+                <div class="rts-sample-question" onclick="askRTSQuestion('How to get trade license?')">
+                    Trade license
+                </div>
+                <div class="rts-sample-question" onclick="askRTSQuestion('What is the process for building permission?')">
+                    Building permission process
+                </div>
+                <div class="rts-sample-question" onclick="askRTSQuestion('How to pay water bill online?')">
+                    Water bill payment
+                </div>
+                <div class="rts-sample-question" onclick="askRTSQuestion('मृत्यू प्रमाणपत्र कसे मिळवावे?')">
+                    मृत्यू प्रमाणपत्र कसे मिळवावे
+                </div>
+                <div class="rts-sample-question" onclick="askRTSQuestion('What are the PMC services available?')">
+                    Available PMC services
+                </div>
+                <div class="rts-sample-question" onclick="askRTSQuestion('How to register a complaint?')">
+                    Register complaint
+                </div>
+                <div class="rts-sample-question" onclick="askRTSQuestion('व्यापार परवाना कसा मिळवावा?')">
+                    व्यापार परवाना कसा मिळवावा
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="rts-input-area">
+                <input type="text" class="rts-message-input" id="rtsMessageInput" placeholder="Ask your question..." onkeypress="handleRTSKeyPress(event)">
+                <button class="rts-send-btn" onclick="sendRTSMessage()">
+                    Send
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        let isRTSChatbotOpen = false;
+        let rtsChatHistory = [];
+
+        // Toggle chatbot visibility
+        function toggleRTSChatbot() {
+            console.log('Toggle button clicked! Current state:', isRTSChatbotOpen);
+            const chatbot = document.getElementById('rtsChatbotContainer');
+            const floatingBtn = document.querySelector('.rts-floating-btn');
+            
+            if (isRTSChatbotOpen) {
+                console.log('Closing chatbot...');
+                console.log('Before close - chatbot classes:', chatbot.className);
+                console.log('Before close - floatingBtn display:', floatingBtn.style.display);
+
+                // Clear chat history when closing
+                rtsChatHistory = [];
+                const chatArea = document.getElementById('rtsChatArea');
+                // Remove all message elements except the welcome message
+                const messages = chatArea.querySelectorAll('.rts-message');
+                messages.forEach(msg => msg.remove());
+                
+                // Clear backend memory
+                fetch('http://localhost:8000/api/clear-memory', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                }).then(response => {
+                    console.log('Backend memory cleared successfully');
+                }).catch(error => {
+                    console.log('Could not clear backend memory:', error);
+                });
+
+                chatbot.classList.remove('show');
+                floatingBtn.style.display = 'flex';
+                isRTSChatbotOpen = false;
+                
+                console.log('After close - chatbot classes:', chatbot.className);
+                console.log('After close - floatingBtn display:', floatingBtn.style.display);
+                console.log('Chatbot closed');
+            } else {
+                console.log('Opening chatbot...');
+                console.log('Before open - chatbot classes:', chatbot.className);
+                console.log('Before open - floatingBtn display:', floatingBtn.style.display);
+
+                chatbot.classList.add('show');
+                floatingBtn.style.display = 'none';
+                isRTSChatbotOpen = true;
+                document.getElementById('rtsMessageInput').focus();
+
+                console.log('After open - chatbot classes:', chatbot.className);
+                console.log('After open - floatingBtn display:', floatingBtn.style.display);
+
+                console.log('Chatbot opened');
+            }
+        }
+
+        // Handle Enter key press
+        function handleRTSKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendRTSMessage();
+            }
+        }
+
+        // Send message function
+        async function sendRTSMessage() {
+            const input = document.getElementById('rtsMessageInput');
+            const message = input.value.trim();
+
+            if (message) {
+                addRTSMessage(message, 'user');
+                input.value = '';
+
+                // Show typing indicator
+                showRTSTypingIndicator();
+
+                // Call the real API and hide typing indicator when done
+                try {
+                    await generateRTSResponse(message);
+                } catch (error) {
+                    console.error('Error in sendRTSMessage:', error);
+                    addRTSMessage("I'm sorry, I'm having trouble connecting to the database right now. Please try again in a moment, or contact support if the issue persists.", 'assistant');
+                } finally {
+                    hideRTSTypingIndicator();
+                }
+            }
+        }
+
+        // Ask question from sample questions
+        async function askRTSQuestion(question) {
+            addRTSMessage(question, 'user');
+            showRTSTypingIndicator();
+
+            try {
+                await generateRTSResponse(question);
+            } catch (error) {
+                console.error('Error in askRTSQuestion:', error);
+                addRTSMessage("I'm sorry, I'm having trouble connecting to the database right now. Please try again in a moment, or contact support if the issue persists.", 'assistant');
+            } finally {
+                hideRTSTypingIndicator();
+            }
+        }
+
+        // Function to convert URLs to clickable links
+        function convertUrlsToLinks(text) {
+            // Regular expression to match URLs (http, https, www)
+            const urlRegex = /(https?:\/\/[^\s]+|www\.[^\s]+)/g;
+
+            // Replace URLs with clickable links
+            const linkedText = text.replace(urlRegex, function(url) {
+                // Add protocol if missing
+                const fullUrl = url.startsWith('http') ? url : `https://${url}`;
+                return `<a href="${fullUrl}" target="_blank" rel="noopener noreferrer" title="Open link in new tab">${url}</a>`;
+            });
+
+            return linkedText;
+        }
+
+        // Function to format plain text lists into HTML lists
+        function formatLists(text) {
+            // Split text into lines
+            const lines = text.split('\n');
+
+            // Process lines to detect and format lists
+            const processedLines = lines.map(line => {
+                // Check if line starts with dash (bullet point)
+                if (line.trim().match(/^-\s+(.+)$/)) {
+                    const content = line.trim().replace(/^-\s+/, '');
+                    return `<li>${content}</li>`;
+                }
+                // Check if line starts with number (numbered list)
+                else if (line.trim().match(/^\d+\.\s+(.+)$/)) {
+                    const content = line.trim().replace(/^\d+\.\s+/, '');
+                    return `<li>${content}</li>`;
+                }
+                // Regular paragraph
+                else if (line.trim()) {
+                    return `<p>${line}</p>`;
+                }
+                // Empty line
+                else {
+                    return '';
+                }
+            });
+
+            // Group consecutive list items
+            const groupedContent = [];
+            let currentList = [];
+            let inList = false;
+
+            processedLines.forEach(line => {
+                if (line.startsWith('<li>')) {
+                    if (!inList) {
+                        inList = true;
+                        currentList = [];
+                    }
+                    currentList.push(line);
+                } else {
+                    if (inList && currentList.length > 0) {
+                        groupedContent.push(`<ul>${currentList.join('')}</ul>`);
+                        currentList = [];
+                        inList = false;
+                    }
+                    if (line.trim()) {
+                        groupedContent.push(line);
+                    }
+                }
+            });
+
+            // Close any remaining list
+            if (inList && currentList.length > 0) {
+                groupedContent.push(`<ul>${currentList.join('')}</ul>`);
+            }
+
+            return groupedContent.join('\n');
+        }
+
+        // Function to embed custom links with specific text
+        function embedCustomLinks(text) {
+            // First, protect custom links by temporarily replacing them
+            const customLinkRegex = /(?:LINK:([^\s]+)|(\[[^\]]+\])\((https?:\/\/[^\s\)]+)\))/g;
+            const protectedLinks = [];
+
+            // Replace custom links with placeholders
+            let tempText = text.replace(customLinkRegex, function(match, simpleUrl, bracketText, bracketUrl, offset) {
+                const placeholder = `__CUSTOM_LINK_${protectedLinks.length}__`;
+                if (simpleUrl) {
+                    // Handle LINK:URL format
+                    protectedLinks.push({
+                        type: 'simple',
+                        url: simpleUrl,
+                        original: match
+                    });
+                } else if (bracketText && bracketUrl) {
+                    // Handle [TEXT](URL) format
+                    const linkText = bracketText.slice(1, -1); // Remove brackets
+                    protectedLinks.push({
+                        type: 'custom',
+                        url: bracketUrl,
+                        text: linkText,
+                        original: match
+                    });
+                }
+                return placeholder;
+            });
+
+            // Now convert regular URLs
+            tempText = convertUrlsToLinks(tempText);
+
+            // Restore custom links with proper HTML
+            protectedLinks.forEach((link, index) => {
+                const placeholder = `__CUSTOM_LINK_${index}__`;
+                let htmlLink;
+                if (link.type === 'simple') {
+                    htmlLink = `<a href="${link.url}" target="_blank" rel="noopener noreferrer" title="Open link in new tab">LINK</a>`;
+                } else if (link.type === 'custom') {
+                    htmlLink = `<a href="${link.url}" target="_blank" rel="noopener noreferrer" title="Open link in new tab">${link.text}</a>`;
+                }
+                tempText = tempText.replace(placeholder, htmlLink);
+            });
+
+            return tempText;
+        }
+
+        // Add message to chat
+        function addRTSMessage(message, sender) {
+            const chatArea = document.getElementById('rtsChatArea');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `rts-message ${sender}`;
+
+            // Convert URLs and custom links to clickable links
+            const linkedMessage = embedCustomLinks(message);
+
+            // Format lists for better readability
+            const formattedMessage = formatLists(linkedMessage);
+            messageDiv.innerHTML = formattedMessage;
+
+            chatArea.appendChild(messageDiv);
+            chatArea.scrollTop = chatArea.scrollHeight;
+
+            // Store in chat history (keep original message for API calls)
+            rtsChatHistory.push({ message, sender, timestamp: new Date() });
+        }
+
+        // Show typing indicator
+        function showRTSTypingIndicator() {
+            const chatArea = document.getElementById('rtsChatArea');
+
+            // Create typing indicator element
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'rts-typing-indicator';
+            typingDiv.id = 'rtsTypingIndicator';
+            typingDiv.innerHTML = `
+                <span>Bot is thinking</span>
+                <div class="rts-typing-dots">
+                    <div class="rts-typing-dot"></div>
+                    <div class="rts-typing-dot"></div>
+                    <div class="rts-typing-dot"></div>
+                </div>
+            `;
+
+            // Add to chat area
+            chatArea.appendChild(typingDiv);
+
+            // Scroll to bottom
+            chatArea.scrollTop = chatArea.scrollHeight;
+        }
+
+        // Hide typing indicator
+        function hideRTSTypingIndicator() {
+            const typingIndicator = document.getElementById('rtsTypingIndicator');
+            if (typingIndicator) {
+                typingIndicator.remove();
+            }
+        }
+
+        // Generate AI response from backend RAG model
+        async function generateRTSResponse(userMessage) {
+            // Call your FastAPI backend
+            const response = await fetch('http://localhost:8000/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    message: userMessage,
+                    conversation_history: rtsChatHistory.map(h => ({ role: h.sender, content: h.message }))
+                })
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const data = await response.json();
+
+            // Add the response from your RAG model
+            addRTSMessage(data.response, 'assistant');
+
+            // Log for debugging
+            console.log('Backend response:', data);
+        }
+
+        // Initialize chatbot
+        document.addEventListener('DOMContentLoaded', function() {
+            // Chat will be initialized when user opens it
+            console.log('Page loaded - Initial state:', isRTSChatbotOpen);
+            const chatbot = document.getElementById('rtsChatbotContainer');
+            const floatingBtn = document.querySelector('.rts-floating-btn');
+            console.log('Initial chatbot classes:', chatbot.className);
+            console.log('Initial floatingBtn display:', floatingBtn.style.display);
+        });
+    </script>
+</body>
+</html>

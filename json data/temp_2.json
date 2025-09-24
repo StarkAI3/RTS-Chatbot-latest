@@ -1,0 +1,515 @@
+[
+    
+
+    {
+      "service_id": "service-106",
+      "service name": "Site Plan",
+      "description": "This service allows citizens to request a copy of the approved site plan for a property. The site plan shows plot boundaries, building layout, and other construction details. It is needed for renovation, resale, or legal compliance. Applicants must provide property details and ownership documents. Once verified, the plan copy is issued digitally or in print."
+    },
+    {
+      "service_id": "service-108",
+      "service name": "Zone Certificate",
+      "description": "This service allows property owners to apply for a Zone Certificate, which officially states the land use zone for their property as per the city's development plan. This certificate is crucial for obtaining building permits, applying for loans, and for property sale transactions."
+    },
+    {
+      "service_id": "service-151",
+      "service name": "Cancellation Of License (Sky Sign)",
+      "description": "Use this service to formally cancel or surrender an existing license. Once cancelled, the license cannot be reused and must be reapplied for if needed again"
+    },
+    {
+      "service_id": "service-150",
+      "service name": "Change In Number Of Partners",
+      "description": "This service enables updating the number of partners associated with a business license. Whether increasing or reducing partners, relevant documents and consent forms are required."
+    },
+    {
+      "service_id": "service-153",
+      "service name": "Change Of Name Of Licensee/ Partner",
+      "description": "This service allows updating the name of the license holder or business partner due to legal name change or correction. Valid proof of change must be provided."
+    },
+    {
+      "service_id": "service-50",
+      "service name": "License Application For Temporary Advertisement",
+      "description": "This service allows application for temporary advertisement licenses. These are typically for short-term events, offers, or announcements. Applicants must provide ad content, display period, and location details."
+    },
+    {
+      "service_id": "service-147",
+      "service name": "License Transfer / Change Of Name / Change Of Business (Sky Sign)",
+      "description": "This service covers license transfer, change of business name, or activity change for existing sky sign licenses. All modifications require supporting documents and department approval."
+    },
+    {
+      "service_id": "service-51",
+      "service name": "Moving Vehicle Hoarding License",
+      "description": "This service allows citizens or agencies to apply for a license to install movable vehicle-mounted hoardings for advertising purposes. The license includes permission for specific duration and vehicle types, ensuring public safety and regulatory compliance. The application process involves submission of vehicle details, advertisement dimensions, and location information. The applicant must also provide NOCs and and undertake to comply with PMC guidelines."
+    },
+    {
+      "service_id": "service-148",
+      "service name": "Secondary Copy Of License",
+      "description": "Citizens can apply for a duplicate copy of an existing license if it is lost, damaged, or misplaced. The application must include identity proof and license details."
+    },
+    {
+      "service_id": "service-24",
+      "service name": "SP1 Storage",
+      "description": "Citizens or businesses can apply for SP1 license for storing goods under municipal limits. This includes warehouses and similar storage units. The application is processed based on location, safety norms, and usage purpose."
+    },
+    {
+      "service_id": "service-25",
+      "service name": "SP2 License Application For Storing Bamboo Coir, Coal Etc.",
+      "description": "This service enables application for SP2 license to store specific materials like bamboo core, coal, etc. It ensures safe handling and compliance with storage regulations. Verification and inspection are part of the approval process."
+    },
+    {
+      "service_id": "service-26",
+      "service name": "SP3 License For Creating Spices, Electroplating And Clothing Paint",
+      "description": "SP3 license is required for units involved in spice manufacturing, electroplating, and cloth dyeing. The service ensures health and environmental safety compliance. Applicants must provide setup details and get approval from authorities."
+    },
+    {
+      "service_id": "service-27",
+      "service name": "SP4 License Renewal Application",
+      "description": "This service is used to renew an existing SP4 trade license. Timely renewal helps avoid penalties and maintains business continuity. Applicants need to submit previous license details and supporting documents."
+    },
+    {
+      "service_id": "service-28",
+      "service name": "SP5 Permit Applications For Machinery",
+      "description": "This service enables application for SP5 license related to use of certain machines for commercial purposes. It ensures machine usage complies with civic safety norms. Site inspection and machinery details are required for approval."
+    },
+    {
+      "service_id": "service-29",
+      "service name": "SP6 Renewal Of Permit Applications For Machinery",
+      "description": "Through this service, applicants can renew their SP6 machine operation license. It helps in maintaining legal authorization for machine-based business activities. The renewed license is issued after document and site verification."
+    },
+    {
+      "service_id": "service-124",
+      "service name": "SP7 License Application For Sign Board",
+      "description": "Citizens or businesses can apply for an SP7 license to install signboards. The application process ensures compliance with municipal regulations. Approval depends on size, location, and safety standards."
+    },
+    {
+      "service_id": "service-30",
+      "service name": "SP7 License Application For Sky Sign",
+      "description": "Citizens and businesses can apply for SP7 license to install sky signs or hoardings. This ensures proper regulation and safety of large signage. Approval is based on location, structure safety, and design compliance."
+    },
+    {
+      "service_id": "service-31",
+      "service name": "SP8 Renewal Application Of Advertising License",
+      "description": "This service helps renew existing advertisement licenses (SP8). Renewals must follow advertisement rules and fee payment schedule. Approved licenses allow continued display of ads on authorized spaces."
+    },
+    {
+      "service_id": "service-235",
+      "service name": "Change of business period classification of hawker certificate holder",
+      "description": "This service allows registered hawkers to apply for a change in their designated business period (e.g., morning, evening, full-day). Approval is required to legally operate outside the originally permitted time slot."
+    },
+    {
+      "service_id": "service-222",
+      "service name": "Hawker certificate / identity card Transfer in  favor of heirs.",
+      "description": "This service facilitates the legal transfer of a hawker's certificate and identity card to their rightful heir. The applicant must provide proof of heirship to complete the transfer and ensure the continuity of the hawking business."
+    },
+    {
+      "service_id": "service-234",
+      "service name": "Issuance of hawker registration certificate",
+      "description": "This service allows citizens to apply for a new hawker registration certificate and identity card. This process legalizes their street vending activities, providing them with a designated space and operational guidelines."
+    },
+    {
+      "service_id": "service-221",
+      "service name": "Regarding issuance of duplicate copy of registered hawker certificate / identity card obtained in favor of hawker",
+      "description": "Registered hawkers can use this service to apply for a duplicate copy of their certificate or identity card if the original is lost, stolen, or damaged."
+    },
+    {
+      "service_id": "service-41",
+      "service name": "Birth Certificate",
+      "description": "This service allows citizens to apply for a birth certificate issued by the municipal authority. The certificate is essential for school admissions, passport, and other government documents. Applicants must provide hospital records or proof of birth, identity, and residence details. Applications can be submitted online or at the local ward office. After verification, the digitally signed certificate is issued."
+    },
+    {
+      "service_id": "service-42",
+      "service name": "Death Certificate",
+      "description": "Citizens can apply for a death certificate using this service. It is a legal document required for property claims, pension, and insurance settlements. The application must include hospital death slip or cremation details, along with the deceased's identity proof. Family members or authorized individuals can apply. After verification by municipal staff, the certificate is generated and issued."
+    },
+    {
+      "service_id": "service-43",
+      "service name": "Marriage Registration Certificate",
+      "description": "This service allows newly married couples to apply for a Marriage Registration Certificate. This legal document is essential for various official purposes, including applying for visas and changing a spouse's name. Applicants must provide proof of marriage, age, and residence, along with witness details."
+    },
+    {
+      "service_id": "service-213",
+      "service name": "Mobile Tower",
+      "description": "This service allows telecom companies to apply for permission to install mobile communication towers. The application is evaluated based on structural safety, radiation norms, zoning regulations, and public safety guidelines to ensure compliance before an NOC is granted."
+    },
+    {
+      "service_id": "service-173",
+      "service name": "Permitting Pavilion / Arch / Running Pavilion",
+      "description": "Apply for permission to install temporary structures like pandals, arches, or ongoing event setups. Safety, public access, and event details are considered before approval."
+    },
+    {
+      "service_id": "service-177",
+      "service name": "Placing Building Materials On Public Roads Of Pune Municipal Corporation / Issuing License For Hill Construction / Renovating",
+      "description": "This service allows applications for permission to temporarily store construction material or build ramps on public roads. Renewal options are also available for ongoing works."
+    },
+    {
+      "service_id": "service-136",
+      "service name": "Application For Registration/ Renewal Of Registration Under Section 5 Of The Bombay Nursing Home Registration Act, 1949, Under Rules 4 And 6 Duplicate License Copy",
+      "description": "Under Section 5 of the Bombay Nursing Home Registration Act, 1949, this service is for obtaining a duplicate license copy in case the original nursing home registration is lost or damaged. An affidavit and justification are mandatory. The process helps maintain legal validity for the license."
+    },
+    {
+      "service_id": "service-140",
+      "service name": "Application For Registration/ Renewal Of Registration Under Section 5 Of The Bombay Nursing Home Registration Act, 1949, Under Rules 4 And 6 For Change In Number Of Partners On License",
+      "description": "This service allows businesses to change the number of partners in their nursing home license, as per Section 5 of the Bombay Nursing Home Registration Act, 1949. Any change in the number of partners requires submitting an application along with the required documents."
+    },
+    {
+      "service_id": "service-138",
+      "service name": "Application For Registration/ Renewal Of Registration Under Section 5 Of The Bombay Nursing Home Registration Act, 1949, Under Rules 4 And 6 Partner Name Change On License",
+      "description": "This service is for modifying the name of a partner in a registered nursing home under the Bombay Nursing Home Registration Act, 1949. Application must include revised partnership agreements and identity documents. The changes are made as per Rule 4 and 6 of the Act. The updates are made as per the Act."
+    },
+    {
+      "service_id": "service-170",
+      "service name": "Application For Registration/ Renewal Of Registration Under Section 5 Of The Bombay Nursing Home Registration Act, 1949, Under Rules 4 And 6 Regarding The Cancellation Of The License Issued",
+      "description": "This service facilitates the cancellation of a registration/renewal application under Section 5 of the Bombay Nursing Home Registration Act, 1949. When the license holder requests cancellation, they must provide supporting documents and fulfill all legal requirements."
+    },
+    {
+      "service_id": "service-192",
+      "service name": "Cancellation Of License (Health)",
+      "description": "This service is for the cancellation of a license for various activities and businesses regulated by municipal or government authorities. Applicants must submit a formal request along with the necessary documentation. Upon approval, the license will be officially revoked, and the applicant will be notified."
+    },
+    {
+      "service_id": "service-17",
+      "service name": "H-10 License To Manufacture Ice Fruit And Ice",
+      "description": "Ice fruit and ice manufacturing units must acquire this license to operate. It ensures water purity, hygiene in preparation, and storage standards. Water testing reports, machinery details, and cleanliness protocols must be submitted. The license is granted after site inspection by the health department. Renewals are based on periodic reviews."
+    },
+    {
+      "service_id": "service-18",
+      "service name": "H-11 Dog License",
+      "description": "Citizens keeping pet dogs must apply for this license from the municipal authority. The license ensures the animal is vaccinated and kept in healthy conditions. Owners must provide vaccination records, dog breed, and residence details. Renewal is required annually. Unlicensed pets may attract penalties."
+    },
+    {
+      "service_id": "service-19",
+      "service name": "H-12 License For Animal Skin Selling And Storage",
+      "description": "This license is mandatory for businesses dealing in animal hide trading and storage. It ensures proper handling, storage, and disposal as per health guidelines. The area must be disinfected regularly to avoid spread of diseases. Applicant must provide storage layout and waste disposal plan. Health department clearance is required before grant."
+    },
+    {
+      "service_id": "service-20",
+      "service name": "H-13 Renewal Of Dog/ Cat License",
+      "description": "This service is for renewing the license for pet dogs or cats. Owners must ensure updated vaccination records and submit them during renewal. The license helps ensure safe coexistence of pets and community health. Renewal should be done before expiry to avoid penalties. A digital or printed copy is issued post-approval."
+    },
+    {
+      "service_id": "service-22",
+      "service name": "H-15 Application Of Registration Of Nursing Homes",
+      "description": "Nursing home operators must register their facility to legally run their services. The registration ensures the availability of certified staff, equipment, and hygiene. Detailed information about patient capacity, services, and emergency care must be submitted. Health and fire safety checks are mandatory. Once approved, the facility can operate under the PMC regulations."
+    },
+    {
+      "service_id": "service-125",
+      "service name": "H-16 Cat Keeping License",
+      "description": "Citizens who keep cats as pets must apply for this license to ensure compliance with health norms. Proof of vaccination and details of the pet must be submitted. It helps in tracking vaccinations and controlling pet population in urban areas. Renewal is required yearly. The license promotes responsible pet ownership."
+    },
+    {
+      "service_id": "service-10",
+      "service name": "H-3 Lodging House License",
+      "description": "This service allows owners of lodging houses to apply for a license to legally operate their establishments. It ensures basic hygiene, safety, and infrastructure standards are maintained. Applicants must submit property documents, floor plans, and sanitation details. Periodic inspections may be conducted. The license must be renewed annually."
+    },
+    {
+      "service_id": "service-11",
+      "service name": "H-4 Marriage/Banquet Hall License",
+      "description": "This service provides licenses to operate marriage halls or community halls. These premises must meet sanitation, crowd control, and fire safety norms. Applicants must provide building plans, ownership proof, and NOCs from relevant departments. The license is mandatory to legally conduct social functions. Renewal is required as per municipal guidelines."
+    },
+    {
+      "service_id": "service-12",
+      "service name": "H-5 Salon/Beauty Parlor License",
+      "description": "Salon and beauty parlour owners can apply for this license to run their business legally. The license ensures hygiene, use of safe products, and basic sanitation in the premises. Inspection by health department is carried out before issuing the license. Details about services, staff, and layout are required. It must be renewed periodically."
+    },
+    {
+      "service_id": "service-13",
+      "service name": "H-6 Egg Sale/ Poultry License",
+      "description": "Vendors selling eggs or poultry must obtain this license to operate. It helps ensure food safety, clean handling, and prevents the spread of diseases. Proper waste disposal, refrigeration, and storage standards are assessed. Applicants must provide identity, location, and shop infrastructure details. Regular checks are conducted by health officials."
+    },
+    {
+      "service_id": "service-14",
+      "service name": "H-7 Panpatti Shop License Sale",
+      "description": "Pan shop owners are required to apply for this license to operate their business. The license ensures cleanliness and regulates sale of tobacco products as per laws. Applicant must provide shop ownership or rental documents, identity proof, and location photos. Health inspectors may verify the premises. The license must be displayed at the shop."
+    },
+    {
+      "service_id": "service-15",
+      "service name": "H-8 License Of Kiln For Roasting Grain (Phutan Etc.)",
+      "description": "This license is required to operate grain roasting or puffing units. The unit must follow food safety, cleanliness, and smoke management regulations. Applicant must provide unit layout, machinery details, and waste disposal plan. Regular monitoring is done to ensure compliance. Non-renewal can lead to cancellation of the license."
+    },
+    {
+      "service_id": "service-16",
+      "service name": "H-9 Sugarcane Juice Shop License",
+      "description": "This service issues licenses for establishments preparing and selling sugarcane juice or jaggery-based products. It ensures cleanliness, pest control, and hygienic food handling. Applicant must submit shop layout, drainage provision, and water source details. The license also ensures proper waste management. Health checks are mandatory before issue."
+    },
+    {
+      "service_id": "service-171",
+      "service name": "Marriage Hall, Lodging, Ice Fruit - Ice, Grain Kiln, Salon/Beauty Parlour,Panpatti, Sale Of Eggs/Poultry, Skin-Bones, Rasgu-Hal, Animals For Feeding Regarding The Cancellation Of The License Issued",
+      "description": "This service is for the cancellation of licenses issued for marriage halls, lodging, ice fruit - ice, grain mills, salons/beauty parlors, betel shops, egg and poultry businesses, skin and bones, juice factories, and animal sheds. The cancellation re..."
+    },
+    {
+      "service_id": "service-114",
+      "service name": "Obtaining A New License (Beef, Pork, Mutton, Chicken, Fish)",
+      "description": "This service allows citizens or traders to apply for a license to sell meat or fish products. It ensures hygienic storage, proper waste disposal, and meat safety practices. Applicants must submit shop layout, meat source details, and cold storage proof. Health inspections are carried out before approval. The license must be displayed at the shop."
+    },
+    {
+      "service_id": "service-137",
+      "service name": "Regarding Change Of Name Of Licensee/Partner On License Issued For Mangal Office, Lodging, Ice Fruit - Ice, Grain Kiln, Salon/Beauty Parlour, Panpatti, Egg Sale / Poultry, Skin-Bone, Rasgu-Hal, Animal Husbandry",
+      "description": "This service allows for the official name change of a license holder or partner on a business license. Valid reasons include marriage, inheritance, legal name changes, or spelling corrections. The applicant must submit updated ID proof, affidavits, and supporting documents. The change is reflected in municipal records after verification. It ensures that business responsibilities are legally aligned with the correct individual."
+    },
+    {
+      "service_id": "service-135",
+      "service name": "Regarding Getting Second Copy Of License Issued For Mangal Office, Lodging, Ice Fruit - Ice, Grain Kiln, Salon/Beauty Parlour, Panpatti, Egg Sale / Poultry, Skin-Bone, Sugarcane Juice Shop License, Animal Husbandry",
+      "description": "This service allows license holders to obtain a duplicate copy of a previously issued trade license in case the original is lost, stolen, or damaged. A police complaint and affidavit are usually required if the license is lost. The duplicate copy ensures that business operations are not interrupted and legal proof of licensing is maintained. Only after verification is the duplicate issued. This is important for business continuity and compliance."
+    },
+    {
+      "service_id": "service-139",
+      "service name": "Regarding The Change In The Number Of Shares In License Issued For Mangal Office, Lodging, Ice Fruit-Ice, Granary, Salon/Beauty Parlour, Panpatti, Sale Of Eggs / Poultry, Skin-Bones, Sugarcane Juice Shop License, Animal Husbandry",
+      "description": "This service allows the change in the number of partners in a business license. If there is an increase or decrease in the number of partners involved in the business, the application must be submitted to update the business license. All relevant documents, including partnership agreements and identity proofs of the partners, need to be submitted. Once verified, the license will reflect the updated number of partners. This helps in maintaining accurate legal records for the business."
+    },
+    {
+      "service_id": "service-134",
+      "service name": "Regarding Transfer/Handover Of License Granted For Mangal Office, Lodging, Ice Fruit-Ice, Granary, Salon/Beauty Parlour, Panpatti, Egg Sale / Poultry, Skin-Bone, Sugarcane Juice Shop License, Animal Husbandry",
+      "description": "This service facilitates the transfer of licenses related to establishments such as marriage halls, lodges, beauty parlors, poultry shops, ice factories, etc., to a new owner or partner. It requires submission of ownership documents, consent forms, and identity proofs of the transferee. The service ensures that all municipal records reflect the current legal owner. It helps prevent legal disputes and ensures compliance with business regulations. The original license remains valid under the new name once the transfer is approved."
+    },
+    {
+      "service_id": "service-142",
+      "service name": "Renewal For License Of Application For Registration/ Renewal Of Registration Under Section 5 Of The Bombay Nursing Home Registration Act, 1949, Under Rules 4 And 6",
+      "description": "This service enables businesses to apply for the renewal of an expired license under Section 5 of the Bombay Nursing Home Registration Act, 1949, according to Rules 4 and 6. The renewal process ensures that the business continues to operate legally and adheres to all necessary health and safety regulations. Required documents such as proof of compliance with health regulations, business identification, and renewal fees must be submitted. Upon verification, the expired license is renewed, allowing uninterrupted operations."
+    },
+    {
+      "service_id": "service-143",
+      "service name": "Renewal Of License (Beef, Pork, Mutton, Chicken, Fish)",
+      "description": "This service allows businesses to renew their licenses for selling beef, pork, mutton, chicken, and fish. The renewal ensures that the business continues to operate in compliance with food safety and hygiene regulations. Necessary documents, including proof of previous licenses and payment of renewal fees, must be submitted. Upon verification, the renewed license will be issued, allowing continued trade of these products."
+    },
+    {
+      "service_id": "service-144",
+      "service name": "Renewal Of License For Marriage Hall, Lodging, Fruit - Ice , Roasted Grain, Salon/Beauty Parlour, Panpatti, Egg Selling/Poultry, Rasgular , Animal Stable",
+      "description": "This service allows the renewal of various licenses such as for marriage halls, lodging, ice fruit, grain mills, salons/beauty parlors, betel shops, egg and poultry businesses, skin and bones, juice factories, and animal sheds. The renewal process ensures compliance with local regulations, safety standards, and necessary business operation licenses. All necessary documents and fees must be submitted for the renewal."
+    },
+    {
+      "service_id": "service-186",
+      "service name": "Transfer Of License / Owner Name Change For Application For Registration/ Renewal Of Registration Under Section 5 Of The Bombay Nursing Home Registration Act, 1949, Under Rules 4 And 6",
+      "description": "This service allows a change in the name of the license holder or business owner for registrations or renewals under Section 5 of the Bombay Nursing Home Registration Act, 1949, following Rules 4 and 6. The applicant needs to submit the necessary documents such as proof of ownership and the reason for the name change. Upon verification, the updated details will be reflected in the registration."
+    },
+    {
+      "service_id": "service-110",
+      "service name": "Exhibition NOC With Fire Tender",
+      "description": "Any public or private exhibition that includes live demonstrations involving fire engines, safety drills, or fire-fighting equipment must acquire a specialized NOC from PMC. This ensures the safety of the public, staff, and exhibitors through proper planning, fire control measures, and real-time coordination with emergency services."
+    },
+    {
+      "service_id": "service-38",
+      "service name": "NOC For Educational, Shopping Malls, Industry, Marriage/Party Halls",
+      "description": "Before establishing or operating an educational building—such as a school, college, or training center—the institution must obtain an NOC from PMC. This includes fire safety compliance, emergency preparedness, structural safety, and hygiene standards. The NOC guarantees that students and staff are operating in a secure and regulation-compliant learning environment."
+    },
+    {
+      "service_id": "service-39",
+      "service name": "NOC For Fire Tender Requirement",
+      "description": "Agencies or contractors intending to participate in PMC or government-issued fire department tenders must secure a Fire NOC. This certificate confirms that the entity complies with essential fire safety infrastructure, trained manpower availability, and operational preparedness. It serves as a regulatory filter ensuring only competent entities engage in fire and emergency service contracts."
+    },
+    {
+      "service_id": "service-37",
+      "service name": "NOC For Hospital / Clinic / Nursing Home",
+      "description": "This service is for obtaining a No Objection Certificate (NOC) to establish or operate a hospital, clinic, or nursing home. The NOC is granted after verifying compliance with health regulations, fire safety standards, building codes, and waste management protocols."
+    },
+    {
+      "service_id": "service-35",
+      "service name": "NOC For Hotels (No Star Hotels)",
+      "description": "Non-star category hotels must obtain an NOC after fire department inspection, structural verification, and sanitation compliance. This ensures guest safety and adherence to local business operation laws."
+    },
+    {
+      "service_id": "service-36",
+      "service name": "NOC For Hotels (Star Hotels)",
+      "description": "Star-rated hotels are required to obtain a No Objection Certificate (NOC) from PMC prior to commencing operations. This includes a rigorous assessment of the premises for advanced fire protection systems, sustainable environmental practices, infrastructure quality, sanitation facilities, structural stability, and adherence to local development control and zoning regulations. The process ensures public safety, guest welfare, and compliance with all hospitality-related laws."
+    },
+    {
+      "service_id": "service-34",
+      "service name": "NOC For Lodging Or Rooming Houses",
+      "description": "Running a lodging or rooming facility requires PMC’s NOC to verify compliance with fire safety, hygiene, structural norms, and local zoning laws to ensure the safety of occupants and surrounding areas."
+    },
+    {
+      "service_id": "service-32",
+      "service name": "NOC For LPG, CNG, Diesel - Petrol Filling Station",
+      "description": "Any entity planning to set up a fuel station for LPG, CNG, petrol, or diesel must obtain an NOC from PMC. This certificate is granted post-scrutiny of zoning, fire safety, environmental compliance, and public safety norms."
+    },
+    {
+      "service_id": "service-33",
+      "service name": "NOC For LPG Reticulated System In Building",
+      "description": "For installing an LPG revival or pipeline system inside a residential or commercial building, the owner must obtain a No Objection Certificate from PMC after safety inspections and regulatory compliance."
+    },
+    {
+      "service_id": "service-2",
+      "service name": "NOC For Organizing Exhibition/Program, Cultural Program , Pendol, Stage For Temporary Structure",
+      "description": "Permission from PMC is required to erect temporary structures like pandals, stages, or stalls for cultural events, public functions, or exhibitions. This ensures safety compliance, structural integrity, and adherence to civic regulations during the event."
+    },
+    {
+      "service_id": "service-130",
+      "service name": "Certificate Of No Arrears",
+      "description": "This certificate is issued by PMC to confirm that no dues are pending against a specific property. It is commonly required during property transactions, loans, or to prove clear title ownership. The property must have cleared all property tax dues to be eligible."
+    },
+    {
+      "service_id": "service-128",
+      "service name": "Change In Ownership/ Change In Name",
+      "description": "When a property is transferred through sale, inheritance, gift, or any legal means, the new owner must apply for a change in ownership with PMC. This ensures that tax records and municipal documents reflect accurate ownership details, which are essential for availing civic amenities and avoiding legal disputes."
+    },
+    {
+      "service_id": "service-129",
+      "service name": "Change In Use",
+      "description": "If a property’s intended usage changes (e.g., from residential to commercial), the owner must inform PMC and obtain approval. This ensures compliance with zoning regulations, correct tax assessment, and sustainable urban planning. Unauthorized use can attract penalties."
+    },
+    {
+      "service_id": "service-78",
+      "service name": "Changing The Connection Size",
+      "description": "If a residential or commercial establishment’s water usage changes significantly, the consumer may request a modification in the pipe size or meter capacity. PMC evaluates the request based on engineering standards, consumption data, and site-specific feasibility before approval."
+    },
+    {
+      "service_id": "service-61",
+      "service name": "New/ Reconnect Water Connection",
+      "description": "Citizens can apply to PMC for a new water supply connection or for reactivation of a previously disconnected service. The process involves site inspection, infrastructure feasibility, payment of applicable charges, and verification of property documents. Water supply is then granted based on availability and compliance with municipal norms."
+    },
+    {
+      "service_id": "service-190",
+      "service name": "Non-Availability Of Water",
+      "description": "This service allows residents to report unavailability of water in their locality. The issue is then assigned to the water supply department for necessary action. Prompt resolution ensures better civic services."
+    },
+    {
+      "service_id": "service-166",
+      "service name": "Plumbing License / Renewal",
+      "description": "Citizens can apply for a new plumber license or renew their existing license through this service. Only licensed plumbers are allowed to perform plumbing works under municipal regulations. The application is reviewed and approved by the concerned authority."
+    },
+    {
+      "service_id": "service-77",
+      "service name": "Tap Repair",
+      "description": "PMC offers repair services for damaged, leaking, or blocked municipal water supply pipelines. Citizens can raise complaints through designated platforms. Once verified, field technicians are deployed for restoration work to ensure uninterrupted water delivery to the property."
+    },
+    {
+      "service_id": "service-131",
+      "service name": "Temporary Permanent Disconnection Of Water Connection",
+      "description": "This service allows citizens to request temporary or permanent disconnection of their water supply. It is useful when the property is vacant, demolished, or no longer in use. The concerned department will process the disconnection after verification."
+    },
+    {
+      "service_id": "service-211",
+      "service name": "Issuance Of Building Permit",
+      "description": "This service allows citizens and developers to apply for a formal building permit before starting any new construction or significant alteration. The permit is issued after building plans are verified for compliance with zoning laws, building codes, and safety regulations."
+    },
+    {
+      "service_id": "service-210",
+      "service name": "Issuance Of Occupancy Certificate",
+      "description": "This service is for obtaining an Occupancy Certificate (OC) after a building's construction is complete. The OC is a legal document certifying that the building complies with the approved plans and is fit for occupation."
+    },
+    {
+      "service_id": "service-209",
+      "service name": "Issuance Of Plinth Certificate",
+      "description": "This service provides a Plinth Certificate to builders once the foundation and plinth level of construction are completed as per the approved plan. This certificate is a prerequisite for proceeding with further vertical construction."
+    },
+    
+    {
+      "service_id": "service-91",
+      "service name": "Sewage Connection",
+      "description": "PMC provides new sewerage connections to properties for efficient and hygienic waste disposal. The process includes technical assessment, inspection of pipeline connectivity, and sanitation compliance checks. This service is essential for maintaining urban health standards and preventing environmental hazards."
+    },
+    {
+      "service_id": "service-205",
+      "service name": "Getting Property Tax Exemption",
+      "description": "This service allows eligible property owners to apply for an exemption from property tax. Exemptions may be granted based on criteria such as the property's use (e.g., for charitable purposes) or the owner's status (e.g., ex-servicemen)."
+    },
+    {
+      "service_id": "service-223",
+      "service name": "Preparation Of Tax Demand Letter",
+      "description": "This service enables property owners to request an official Tax Demand Letter from the municipal authority. This document details the outstanding property tax dues for a specific period and is often required for financial or legal purposes."
+    },
+    {
+      "service_id": "service-203",
+      "service name": "Property Demolition and Reconstruction Tax",
+      "description": "When a property is demolished and reconstructed, this service allows owners to report the change and apply for a revised tax assessment based on the new construction, ensuring accurate tax liability."
+    },
+    {
+      "service_id": "service-204",
+      "service name": "Property Division Into Sub-Divisions",
+      "description": "This service is used when a single property is legally divided into multiple sub-divisions. Owners must apply to have each new sub-division assessed and registered as a separate entity for property tax purposes."
+    },
+    {
+      "service_id": "service-197",
+      "service name": "Property Tax Deduction",
+      "description": "This service allows property owners to apply for a deduction or rebate on their property tax bill, which may be available for timely payment, use of eco-friendly systems, or other municipal schemes."
+    },
+    {
+      "service_id": "service-198",
+      "service name": "PT5 - New Taxation Service",
+      "description": "This service is for registering a newly constructed or previously un-assessed property into the municipal tax records. It is the first step for a property owner to enter the property tax system."
+    },
+    {
+      "service_id": "service-103",
+      "service name": "PT5 - Property Tax Title Transfer",
+      "description": "This service is for transferring the name of the property tax holder from one person to another. It is required in case of property sale, inheritance, or gift. Applicants must provide sale deed, heirship documents, or gift deed as applicable. The application is processed by the property tax department after verification. The new name is updated in the property tax records."
+    },
+    {
+      "service_id": "service-199",
+      "service name": "PT5 - Re-Taxation Service",
+      "description": "This service is for the re-assessment of property tax, typically required when there are significant changes to the property, such as additions, alterations, or a change in use."
+    },
+    {
+      "service_id": "service-225",
+      "service name": "Registration Of Objections",
+      "description": "If a property owner disagrees with their property tax assessment, this service allows them to formally register an objection. The objection is then reviewed by the tax department to resolve the dispute."
+    },
+    {
+      "service_id": "service-224",
+      "service name": "Self Assessment",
+      "description": "This service allows property owners to calculate and declare their property tax liability themselves based on prescribed criteria like property size, location, and usage. The declaration is then submitted to the municipal authority for verification."
+    },
+    {
+      "service_id": "service-96",
+      "service name": "Aquarium Ticket",
+      "description": "Citizens can use this service to purchase tickets for the municipal aquarium. Visitors can choose from single entry tickets or group passes. Educational tours, families, and tourists often avail this service. Information about species and displays is available during the visit. This initiative promotes awareness about aquatic life."
+    },
+    {
+      "service_id": "service-66",
+      "service name": "Garden Ticket",
+      "description": "This service facilitates the purchase of entry tickets for municipal gardens. Citizens can buy daily, weekly, or monthly passes depending on their preference. Special concessions are available for senior citizens and children. Tickets can be purchased online or from the garden entrance. It ensures regulated access and maintenance of public parks."
+    },
+    {
+      "service_id": "service-97",
+      "service name": "Photography Ticket",
+      "description": "This service provides permits for professional or personal photography inside municipal premises like gardens, forts, or heritage sites. Applicants must mention the purpose and duration of the shoot. Special rates apply for commercial photo or video shoots. Proper permissions ensure site safety and avoid inconvenience to visitors. The permit is valid only for specified hours."
+    },
+    {
+      "service_id": "service-217",
+      "service name": "Movie Shooting License",
+      "description": "This service allows production houses to apply for a license to conduct movie, television, or advertisement shoots in public spaces. The application requires details of the location and duration to ensure minimal public inconvenience."
+    },
+    {
+      "service_id": "service-231",
+      "service name": "Filling Potholes On Roads",
+      "description": "This service enables citizens to report potholes on public roads to the municipal authorities. Providing the exact location helps the road maintenance department to schedule prompt repairs."
+    },
+    {
+      "service_id": "service-228",
+      "service name": "Illegal WaterConnection Complaint",
+      "description": "Through this service, citizens can confidentially report suspected illegal or unauthorized water connections. The municipal water department will investigate these complaints to prevent water theft and ensure fair distribution."
+    },
+    {
+      "service_id": "service-233",
+      "service name": "Keeping The City Clean",
+      "description": "This service allows citizens to report issues related to public cleanliness, such as garbage dumping or overflowing bins. The complaint is forwarded to the solid waste management department for action."
+    },
+    {
+      "service_id": "service-232",
+      "service name": "Maintaining Gutter Covers",
+      "description": "Citizens can use this service to report broken, missing, or displaced gutter or manhole covers. Prompt reporting helps prevent accidents and ensures public safety."
+    },
+    {
+      "service_id": "service-227",
+      "service name": "Reporting Faulty Meters",
+      "description": "This service allows consumers to report issues with their water meters, such as being faulty, damaged, or inaccurate. The complaint initiates a process for inspection and repair or replacement."
+    },
+    {
+      "service_id": "service-229",
+      "service name": "Water Connection Force Capacity Complaint",
+      "description": "If a resident is experiencing low water pressure, this service can be used to file a complaint. The water supply department will investigate the issue and take corrective action."
+    },
+    {
+      "service_id": "service-230",
+      "service name": "Water Quality Complaint",
+      "description": "This service enables citizens to report concerns about the quality of their tap water, such as discoloration or bad odor. The complaint is escalated for sample testing and necessary action to ensure a safe water supply."
+    },
+    {
+      "service_id": "service-69",
+      "service name": "Branch Cutting",
+      "description": "Citizens can apply for permission to trim tree branches that obstruct buildings, roads, or signboards. The application is verified and approved by the garden department."
+    },
+    {
+      "service_id": "service-70",
+      "service name": "Tree Cutting And Replantation",
+      "description": "Apply for permission to cut trees with mandatory replantation. This is regulated under municipal tree conservation policies. Justification and replantation plans are required."
+    }
+  ]

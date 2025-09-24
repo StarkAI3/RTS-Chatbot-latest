@@ -1,0 +1,2223 @@
+[
+    {
+        "Department": "SKY SIGN",
+        "Service": [
+            {
+                "Service": "Cancellation Of License",
+                "Documents Required": [
+                    "Application Form With Reason",
+                    "If Proprietorship - Then Individual Application",
+                    "No Dues Certificate",
+                    "Original Certificate"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Assistant Municipal Commissioner",
+                    "Level 3 (L3) Approver": "Deputy Municipal Commissioner",
+                    "Level 4 (L4) Approver": "Sanitary Inspector",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=192"
+            },
+            {
+                "Service": "Change In Number Of Partners",
+                "Documents Required": [
+                    "No Dues Certificate",
+                    "Application Form With Reason"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Assistant Municipal Commissioner",
+                    "Level 3 (L3) Approver": "Deputy Municipal Commissioner",
+                    "Level 4 (L4) Approver": "Sanitary Inspector",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "No",
+                "Output Certificate Format": "Yes",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=150"
+            },
+            {
+                "Service": "Change Of Name Of Licensee/ Partner",
+                "Documents Required": [
+                    "Application Form With Reason",
+                    "No Dues Certificate"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Assistant Municipal Commissioner",
+                    "Level 3 (L3) Approver": "Deputy Municipal Commissioner",
+                    "Level 4 (L4) Approver": "Sanitary Inspector",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=153"
+            },
+            {
+                "Service": "License Application For Temporary Advertisement",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Assistant Municipal Commissioner",
+                    "Level 3 (L3) Approver": "Deputy Municipal Commissioner",
+                    "Level 4 (L4) Approver": "Sanitary Inspector",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "No",
+                "Output Certificate Format": "Yes",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/customForm?pamId=50"
+            },
+            {
+                "Service": "License Transfer / Change Of Name / Change Of Business (Sky Sign)",
+                "Documents Required": [
+                    "Application Form With Reason",
+                    "No Dues Certificate"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Assistant Municipal Commissioner",
+                    "Level 3 (L3) Approver": "Deputy Municipal Commissioner",
+                    "Level 4 (L4) Approver": "Sanitary Inspector",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": null
+            },
+            {
+                "Service": "Moving Vehicle Hoarding License",
+                "Documents Required": [
+                    "Vehicle Fitness Certificate",
+                    "Permission Of RTO Office",
+                    "Vehicle Owner Consent Letter",
+                    "Photograph Of The Vehicle From All Sides",
+                    "Photograph Of The Vehicle From All Sides",
+                    "Vehicle Fitness Certificate",
+                    "Permission Of RTO Office",
+                    "Vehicle Insurance Document",
+                    "Vehicle Insurance Document",
+                    "NOC Of Encrochment Department",
+                    "NOC Of Encrochment Department",
+                    "NOC Of Encrochment Department",
+                    "Vehicle Owner Consent Letter",
+                    "PUC Certificate",
+                    "Vehicle TC",
+                    "Vehicle Registration Certificate-RC",
+                    "PUC Certificate",
+                    "Driver's License",
+                    "Valid License If Commercial Vehicle",
+                    "Certificate Of Police Deputy Commissioner Traffic Department",
+                    "Certificate Of Police Deputy Commissioner Traffic Department",
+                    "Valid License If Commercial Vehicle",
+                    "Driver's License",
+                    "Vehicle TC",
+                    "Vehicle Registration Certificate-RC"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Assistant Municipal Commissioner",
+                    "Level 3 (L3) Approver": "Deputy Municipal Commissioner",
+                    "Level 4 (L4) Approver": "Sanitary Inspector",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "No",
+                "Output Certificate Format": "PDF",
+                "application link / url": null
+            },
+            {
+                "Service": "Secondary Copy Of License",
+                "Documents Required": [
+                    "Original License Book"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Assistant Municipal Commissioner",
+                    "Level 3 (L3) Approver": "Deputy Municipal Commissioner",
+                    "Level 4 (L4) Approver": "Sanitary Inspector",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=148"
+            },
+            {
+                "Service": "SP1 Storage",
+                "Documents Required": [
+                    "No Objection Certificate For The Society Members Where The Business Is Situated (If Required)",
+                    "Rental Agreement Receipt",
+                    "Consent Letter",
+                    "Partnership Letter",
+                    "NOC  Of Construction Department",
+                    "Applicant's Undertaking  (RS 500, Stamp Paper Notarized)",
+                    "In The Name Of Deputy Commissioner, Pune Municipal Corporation, Printed Application",
+                    "The Gram Panchayat NOC If The Business  Is In The Gram Panchayat  Zone",
+                    "Business Space Maps With 3 Blue Print Sites Plans",
+                    "Receipt Of Paid Property Tax & NOC",
+                    "Shop Act License, Self Attested.",
+                    "NOC Of Health Department",
+                    "NOC Of Fire Brigade Department",
+                    "If Business Is Under Galicha Vasti Nirmulan Then Related Department NOC",
+                    "Article/Memorandum Of Association"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Assistant Municipal Commissioner",
+                    "Level 3 (L3) Approver": "Deputy Municipal Commissioner",
+                    "Level 4 (L4) Approver": "Sanitary Inspector",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=24"
+            },
+            {
+                "Service": "SP2 License Application For Storing Bamboo Coir, Coal Etc.",
+                "Documents Required": [
+                    "Rental Agreement Receipt",
+                    "In The Name Of Deputy Commissioner, Pune Municipal Corporation, Printed Application",
+                    "Receipt Of Paid Property Tax & NOC",
+                    "Shop Act License, Self Attested",
+                    "Article/Memorandum Of Association",
+                    "Business Space Maps With 3 Blue Print Sites Plans",
+                    "Partnership Letter",
+                    "If Business Is Under Galicha Vasti Nirmulan Then Related Department NOC",
+                    "NOC  Of Construction Department",
+                    "NOC Of Fire Brigade Department",
+                    "Applicant's Undertaking  (RS 500, Stamp Paper Notarized)",
+                    "NOC Of Health Department",
+                    "The Gram Panchayat NOC If The Business  Is In The Gram Panchayat  Zone",
+                    "Rent / Rental Agreement (If Occupancy Space Is Rented) / Non-Objectionable Letter Of Original Owner",
+                    "Consent Letter",
+                    "No Objection Certificate For The Society Members Where The Business Is Situated (If Required)"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Assistant Municipal Commissioner",
+                    "Level 3 (L3) Approver": "Deputy Municipal Commissioner",
+                    "Level 4 (L4) Approver": "Sanitary Inspector",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=25"
+            },
+            {
+                "Service": "SP3 License For Creating Spices, Electroplating And Clothing Paint",
+                "Documents Required": [
+                    "Rental Agreement Receipt",
+                    "No Objection Certificate For The Society Members Where The Business Is Situated (If Required)",
+                    "Partnership Letter",
+                    "Article/Memorandum Of Association",
+                    "Article/Memorandum Of Association",
+                    "The Gram Panchayat NOC If The Business  Is In The Gram Panchayat  Zone",
+                    "Applicant's Undertaking  (RS 500, Stamp Paper Notarized)",
+                    "NOC  Of Construction Department",
+                    "If Business Is Under Galicha Vasti Nirmulan Then Related Department NOC",
+                    "Receipt Of Income For The Current Year/Tax Collection And Taxation NOC Of Division",
+                    "Business Space Maps With 3 Blue Print Sites Plans",
+                    "In The Name Of Deputy Commissioner, Pune Municipal Corporation, Printed Application",
+                    "Independent Tap Connection With Meter (Water Taps Payment Receipt)",
+                    "The Gram Panchayat NOC If The Business  Is In The Gram Panchayat  Zone",
+                    "NOC Of Health Department",
+                    "Consent Letter",
+                    "Drainage NOC",
+                    "NOC Of Fire Brigade Department",
+                    "Shop Act License, Self Attested"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Assistant Municipal Commissioner",
+                    "Level 3 (L3) Approver": "Deputy Municipal Commissioner",
+                    "Level 4 (L4) Approver": "Sanitary Inspector",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=26"
+            },
+            {
+                "Service": "SP4 License Renewal Application",
+                "Documents Required": [
+                    "Applicant's Undertaking (Notarized On Rs. 500 Stamp Paper)",
+                    "Copy Of Letter From Concerned Ward Office Regarding Approval Of Previous Renewal",
+                    "Receipt Of Paid Property Tax / NOC",
+                    "Owner's NOC Notarized (Rs.500 Stamp Paper)",
+                    "Article/Memorandum Of Association",
+                    "NOC Of Fire Brigade Department",
+                    "The Gram Panchayat NOC If The Business  Is In The Gram Panchayat  Zone",
+                    "Structural Stability Report",
+                    "Upload Photo Showing License No. On Board & Distant Photo Showing Location Of The Advertisment Board"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Assistant Municipal Commissioner",
+                    "Level 3 (L3) Approver": "Deputy Municipal Commissioner",
+                    "Level 4 (L4) Approver": "Sanitary Inspector",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=27"
+            },
+            {
+                "Service": "SP5 Permit Applications For Machinery",
+                "Documents Required": [
+                    "NOC Of Health Department",
+                    "NOC Of Fire Brigade Department",
+                    "In The Name Of Deputy Commissioner, Pune Municipal Corporation, Printed Application",
+                    "Business Space Maps With 3 Blue Print Sites Plans",
+                    "Independent Tap Connection With Meter (Water Taps Payment Receipt)",
+                    "If Business Is Under Galicha Vasti Nirmulan Then Related Department NOC",
+                    "Receipt Of Income For The Current Year/Tax Collection And Taxation NOC Of Division",
+                    "Article/Memorandum Of Association",
+                    "NOC  Of Construction Department",
+                    "No Objection Certificate For The Society Members Where The Business Is Situated (If Required)",
+                    "Receipt Of Paid Property Tax & NOC",
+                    "Consent Letter",
+                    "NOC Of The Water Supply Department",
+                    "Partnership Letter",
+                    "Rental Agreement Receipt",
+                    "Applicant's Undertaking  (RS 500, Stamp Paper Notarized)",
+                    "Shop Act License, Self Attested.",
+                    "The Gram Panchayat NOC If The Business  Is In The Gram Panchayat  Zone"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Assistant Municipal Commissioner",
+                    "Level 3 (L3) Approver": "Deputy Municipal Commissioner",
+                    "Level 4 (L4) Approver": "Sanitary Inspector",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=28"
+            },
+            {
+                "Service": "SP6 Renewal Of Permit Applications For Machinery",
+                "Documents Required": [
+                    "Applicant's Undertaking (Notarized On Rs. 500 Stamp Paper)",
+                    "The Gram Panchayat NOC If The Business  Is In The Gram Panchayat  Zone",
+                    "Upload Photo Showing License No. On Board & Distant Photo Showing Location Of The Advertisment Board",
+                    "Article/Memorandum Of Association",
+                    "Receipt Of Paid Property Tax / NOC",
+                    "Owner's NOC Notarized (Rs.500 Stamp Paper)",
+                    "NOC Of Fire Brigade Department",
+                    "NOC  Of Construction Department",
+                    "Copy Of Letter From Concerned Ward Office Regarding Approval Of Previous Renewal"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Assistant Municipal Commissioner",
+                    "Level 3 (L3) Approver": "Deputy Municipal Commissioner",
+                    "Level 4 (L4) Approver": "Sanitary Inspector",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=29"
+            },
+            {
+                "Service": "SP7 License Application For Sign Board",
+                "Documents Required": [
+                    "Applicant's Undertaking  (RS 500, Stamp Paper Notarized)",
+                    "Acceptance(Construction Completion Certificate For Terrace Or Wall)",
+                    "Structural Stability Report With Map",
+                    "Photograph Of Land In The Advertisement Panel",
+                    "Applicant E-Mail",
+                    "Shop Act License",
+                    "Business Space Maps With 3 Blue Print Sites Plans",
+                    "Receipt Of Paid Property Tax & NOC",
+                    "Rental Agreement Receipt",
+                    "Owner\u2019s Consent Sheet(On Rs. 500.00 Stamp Paper)"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Assistant Municipal Commissioner",
+                    "Level 3 (L3) Approver": "Deputy Municipal Commissioner",
+                    "Level 4 (L4) Approver": "Sanitary Inspector",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=124"
+            },
+            {
+                "Service": "SP7 License Application For Sky Sign",
+                "Documents Required": [
+                    "Photograph Of Marked Skysign With Latitude & Longitude",
+                    "If The Land On Which Advertisement Is To Be Displayed Is Given On Lease By A Public Authority No Objection Certificate From The Lesser Is Also Required",
+                    "In The Name Of Deputy Commissioner, Pune Municipal Corporation, Printed Application",
+                    "Acceptance(Construction Completion Certificate For Terrace Or Wall)",
+                    "Advertiser E-Mail",
+                    "Affidavit Of Adversting Fee (Rs 500 Stamp Paper)",
+                    "If Business Is Under Galicha Vasti Nirmulan Then Related Department NOC",
+                    "Photograph Of Land In The Advertisement Panel",
+                    "Architect's Certificate",
+                    "Structural Stability Report With Map",
+                    "Certificate Of Tree Authority AMC (If Terrace Then Not Applicable)",
+                    "In The Certificate Of Police Deputy Commissioner Traffic Department",
+                    "Applicant's Undertaking  (RS 500, Stamp Paper Notarized)",
+                    "Owner\u2019s Consent Sheet(On Rs. 500.00 Stamp Paper)",
+                    "Rental Agreement Receipt",
+                    "Receipt Of Paid Property Tax & NOC",
+                    "Business Space Maps With 3 Blue Print Sites Plans",
+                    "Consent Letter",
+                    "No Objection Certificate (NOC) From The Landlord Of The Land Or Building Over Which Advertisement Is Proposed to Be Displayed",
+                    "In Case Of Hoarding On The Terrace Of A Building. No Objection Certificate & The Certified Copy Of The Resolution Duly Passed In The General Body Meeting. In Other Cases, The No Objection Certificate From 2/3rd Members Of The Building Is Necessary",
+                    "Photograph Of Marked Skysign 10 x 8\" (Two Copies)\"",
+                    "The Structural Design Or Plan, Approved By A Licensed Structural Engineer",
+                    "Landlord's/Applicant/Advertise Agency Property Tax No Dues Certificate",
+                    "The Registration Certificate Of General Service Tax (GST)",
+                    "As Per R&R 2022 Rules 24(1) Consent (On Rs.500/- Stamp Paper) In Writing From Landlord's/Applicant/Advertise Agency",
+                    "If Necessary, The Competent Authority Will Seek A No Objection Certificate From The Competent Officer Of The Police (Traffic) Department And The Parks Department Of The Municipal Corporation",
+                    "Two Copies Of The Location Plan Indicating Presence Of Any Trees Or Any Other Hoarding Within 40 Meters Of The Location Along The Same Alignment And Dimensions Thereof. No Objection Certificate From The Office Of Traffic Department And Garden Department Of (...)",
+                    "Structural Engineer's Stability Certificate & Drawings",
+                    "No Objection Certificate From The Civil Aviation Department Of The Government Of India Wherever Necessary",
+                    "Two Copies Of The Design And Colour Scheme And Sketch Showing The Exact Location Of The Proposed Site In Question, Including Computer Generated Design Image Along With External Lighting Fixtures",
+                    "The Structural Stability Certificate, From Licensed Structural Engineer, Of The Building On Which The Advertisement Is To Be Erected And The Structural Stability Certificate Of The Hoarding Structure"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Assistant Municipal Commissioner",
+                    "Level 3 (L3) Approver": "Deputy Municipal Commissioner",
+                    "Level 4 (L4) Approver": "Sanitary Inspector",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=30"
+            },
+            {
+                "Service": "SP8 Renewal Application Of Advertising License",
+                "Documents Required": [
+                    "As Per R&R 2022 Rules 24(1) Consent (On Rs.500/- Stamp Paper) In Writing From Landlord's/Applicant/Advertise Agency",
+                    "Copy Of License (Form C) Issued By Municipal Corporation For Advertising Boards",
+                    "Structural Engineer's Stability Certificate & Drawings",
+                    "Landlord's/Applicant/Advertise Agency Property Tax No Dues Certificate",
+                    "Last Year License Fee Receipt",
+                    "Two Copies Of 10x 8\" Photograph Of The Existing Hoarding With License Code\"",
+                    "Copy Of Letter From Concerned Ward Office Regarding Approval Of Previous Renewal",
+                    "Applicant's Undertaking (Notarized On Rs. 500 Stamp Paper)",
+                    "SkySign Licence Form C",
+                    "Completion Certificate / Building Stability (If Board Is On Wall Or Terrace)",
+                    "Structural Stability Report",
+                    "Advertisment Board Holder's G.S.T Attested Copy Of Registration Certificate",
+                    "Advertisement Board Renewal Form(SP 8)",
+                    "Owner's NOC Notarized (Rs.500 Stamp Paper)",
+                    "Receipt Of Paid Property Tax / NOC",
+                    "Upload Photo Showing License No. On Board & Distant Photo Showing Location Of The Advertisment Board"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Assistant Municipal Commissioner",
+                    "Level 3 (L3) Approver": "Deputy Municipal Commissioner",
+                    "Level 4 (L4) Approver": "Sanitary Inspector",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=31"
+            }
+        ]
+    },
+    {
+        "Department": "HAWKER",
+        "Service": [
+            {
+                "Service": "Change of business period classification of hawker certificate holder",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "https://hawkers.pmc.gov.in/"
+            },
+            {
+                "Service": "Hawker certificate / identity card Transfer in  favor of heirs.",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": null
+            },
+            {
+                "Service": "Issuance of hawker registration certificate",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "https://hawkers.pmc.gov.in/"
+            },
+            {
+                "Service": "Regarding issuance of duplicate copy of registered hawker certificate / identity card obtained in favor of hawker",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "https://hawkers.pmc.gov.in/"
+            }
+        ]
+    },
+    {
+        "Department": "CERTIFICATE",
+        "Service": [
+            {
+                "Service": "Birth Certificate",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/searchBirth"
+            },
+            {
+                "Service": "Death Certificate",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/searchDeath"
+            },
+            {
+                "Service": "Marriage Registration Certificate",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=43"
+            }
+        ]
+    },
+    {
+        "Department": "MOBILE TOWER",
+        "Service": [
+            {
+                "Service": "Mobile Tower",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "https://mahasanchar.emahapwd.com/"
+            }
+        ]
+    },
+    {
+        "Department": "ENCROACHMENT",
+        "Service": [
+            {
+                "Service": "Permitting Pavilion / Arch / Running Pavilion",
+                "Documents Required": [
+                    "Information (Circular) About Organized Program",
+                    "Detailed Map Of Respective Location.",
+                    "Local Police Station/ Traffic Police Department's NOC From Eligible Person According To Law And Order"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=173"
+            },
+            {
+                "Service": "Placing Building Materials On Public Roads Of Pune Municipal Corporation / Issuing License For Hill Construction / Renovating",
+                "Documents Required": [
+                    "Building Commencement Certificate",
+                    "Application With Detail Information In Departmental Format ( Form -D)",
+                    "Detailed Map Of Respective Location",
+                    "Old License/Receipt For Renewal"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=177"
+            }
+        ]
+    },
+    {
+        "Department": "HEALTH",
+        "Service": [
+            {
+                "Service": "Application For Registration/ Renewal Of Registration Under Section 5 Of The Bombay Nursing Home Registration Act, 1949, Under Rules 4 And 6 Duplicate License Copy",
+                "Documents Required": [
+                    "Original Certificate",
+                    "No Dues Certificate",
+                    "Registration Certificate",
+                    "Application Form With Reason",
+                    "Affidavit On 100Rs Stamp Paper"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "No",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=136"
+            },
+            {
+                "Service": "Application For Registration/ Renewal Of Registration Under Section 5 Of The Bombay Nursing Home Registration Act, 1949, Under Rules 4 And 6 For Change In Number Of Partners On License",
+                "Documents Required": [
+                    "Original Certificate",
+                    "Registration Certificate",
+                    "Death Certificate",
+                    "Affidavit",
+                    "Photocopy Of License If The Business Is In The Form Of A Partnership / Company",
+                    "Application Form With Reason",
+                    "No Dues Certificate"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "No",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=140"
+            },
+            {
+                "Service": "Application For Registration/ Renewal Of Registration Under Section 5 Of The Bombay Nursing Home Registration Act, 1949, Under Rules 4 And 6 Partner Name Change On License",
+                "Documents Required": [
+                    "3 Years Of Experience Certificates Of Two Builders Or Architects(Architechts Only)",
+                    "Purchase Letter",
+                    "Affidavit On 100Rs Stamp Paper",
+                    "Ration Card",
+                    "If Licensee Is Dead Then Attested Copies Of Death Certificate",
+                    "Registration Certificate",
+                    "Original Certificate",
+                    "No Dues Certificate",
+                    "Application Form With Reason",
+                    "If Proprietorship - Then Individual Application",
+                    "Photocopy Of License If The Business Is In The Form Of A Partnership / Company",
+                    "Doctors' Valid Registration From Concerned Medical Council & Educational Qualification"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "No",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=138"
+            },
+            {
+                "Service": "Application For Registration/ Renewal Of Registration Under Section 5 Of The Bombay Nursing Home Registration Act, 1949, Under Rules 4 And 6 Regarding The Cancellation Of The License Issued",
+                "Documents Required": [
+                    "Original Certificate"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "No",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=170"
+            },
+            {
+                "Service": "Cancellation Of License",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "No",
+                "Output Certificate Format": "Yes",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=192"
+            },
+            {
+                "Service": "H-10 License To Manufacture Ice Fruit And Ice",
+                "Documents Required": [
+                    "Receipt Of Payment Of Water Tax For Separate Water Connection With Meter",
+                    "NOC of Building Department",
+                    "Blue Print With Measurement Of Site With Plan / Map Of Business Place",
+                    "Separate Tap Connection With Meter (Commercial) Water Bill Payment Receipt",
+                    "If Non-Resident (Register Rent Agreement/ Owner NOC)",
+                    "Receipt Of Payment Of Current Year Property Tax NOC Of Tax Collection And Taxation Department",
+                    "If Business Is Under Galicha Vasti Nirmulan Then Related Dept NOC/Non Res Services Payment Receipt",
+                    "Non Residential Services Payment Receipt",
+                    "NOC Of Fire Brigade Department"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=17"
+            },
+            {
+                "Service": "H-11 Dog License",
+                "Documents Required": [
+                    "Pet Owner Aadhar Card",
+                    "Address Proof(Self Owned/Rental/Leased )",
+                    "Pet Image 1: Face",
+                    "Pet Image 3 :Left Side",
+                    "Pet Image 2: Right Side",
+                    "Certificate Of Last Anti-Rabies Vaccination",
+                    "NOC Of Landlord/Lease (If Rented Or Leased)"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=18"
+            },
+            {
+                "Service": "H-12 License For Animal Skin Selling And Storage",
+                "Documents Required": [
+                    "If Business Is Under Galicha Vasti Nirmulan Then Related Dept NOC/Non Res Services Payment Receipt",
+                    "Blue Print With Measurement Of Site With Plan / Map Of Business Place",
+                    "Receipt Of Payment Of Current Year Property Tax NOC Of Tax Collection And Taxation Department",
+                    "If Non-Resident (Register Rent Agreement/ Owner NOC)",
+                    "NOC of Building Department",
+                    "Non Residential Services Payment Receipt",
+                    "Receipt Of Payment Of Current Year Property Tax NOC Of Tax Collection And Taxation Department",
+                    "Receipt Of Payment Of Water Tax For Separate Water Connection With Meter",
+                    "If Business Is Under Galicha Vasti Nirmulan Then Related Dept NOC/Non Res Services Payment Receipt",
+                    "Receipt Of Payment Of Water Tax For Separate Water Connection With Meter",
+                    "Blue Print With Measurement Of Site With Plan / Map Of Business Place",
+                    "No Objection Certificate From Construction Department"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=19"
+            },
+            {
+                "Service": "H-13 Renewal Of Dog/ Cat License",
+                "Documents Required": [
+                    "Certificate Of Last Anti-Rabies Vaccination",
+                    "Pet Image 3 :Left Side",
+                    "Pet Image 2: Right Side",
+                    "Pet Image 1: Face",
+                    "Pet Owner Aadhar Card",
+                    "NOC Of Landlord/Lease (If Rented Or Leased)",
+                    "Address Proof(Self Owned/Rental/Leased )",
+                    "Documents Related To Proof Of The Place",
+                    "Original License Book"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=20"
+            },
+            {
+                "Service": "H-15 Application Of Registration Of Nursing Homes",
+                "Documents Required": [
+                    "If The Business Is In The Form Of A Company Or Partnership, A Copy Of The Registered Partnership, In Case Of A Company, A Copy Of The Articles Of Association Of The Company / A Copy Of The Registration Certificate Of The Office Of The Charity Commissioner, (...)",
+                    "Photocopy Of Nursing Home Registration Certificate",
+                    "Biomedical No Dues Certificate",
+                    "Educational Certificates Of Nursing Cadre (Nurse With Qualification As Auxiliary Nursing Midwifery Or General Nursing Midwifery Is Mandatory) Copies Of Updated Registration Certificates Of Nurses Registered With Maharashtra Nursing Council",
+                    "Receipt Of Payment Of Water Tax For Separate Water Connection With Meter",
+                    "City Family Welfare Office, Pune M.N.P. Family Planning Surgery Letter From (If Maternity Bed)",
+                    "Copy Of Registered Tenancy Agreement If The Place Of Business Is On Tenancy Agreement.",
+                    "Receipt Of Income For The Current Year/Tax Collection And Taxation NOC Of Division",
+                    "Photocopies Of The Board Displaying The Toll Free Number Of Grievance Redressal Room In The Facade Of The Hospital",
+                    "Medical Practitioners, Degree/Graduate Certificates of Medical Education, Degree/Graduate Certificates of Educational Enhancement, Certificates of Enhanced Educational Qualification Appointment Letters And Their Own Letter Of Acceptance Of Appointment In C (...)",
+                    "Updated Registration Certificate Registered With Maharashtra Pollution Control Board",
+                    "Photocopies Of The Boards Displayed In The Facade Of The Hospital Showing The Tariff Of Treatment Provided In The Hospital And The Code Of Patient Rights",
+                    "NOC Of Fire Brigade Department",
+                    "Updated Registration Certificates Of The Medical Practitioner Registered With Maharashtra Medical Council And Concerned Medical Councils Of Maharashtra State"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=22"
+            },
+            {
+                "Service": "H-16 Cat Keeping License",
+                "Documents Required": [
+                    "Pet Image 3 :Left Side",
+                    "Address Proof(Self Owned/Rental/Leased )",
+                    "NOC Of Landlord/Lease (If Rented Or Leased)",
+                    "Certificate Of Last Anti-Rabies Vaccination",
+                    "Pet Image 2: Right Side",
+                    "Pet Owner Aadhar Card",
+                    "Pet Image 1: Face"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=125"
+            },
+            {
+                "Service": "H-3 Lodging House License",
+                "Documents Required": [
+                    "Company MOU/Partnership (Aadhar Card/Property Tax Receipt)",
+                    "Applicant Identification Proof (Aadhaar Card/PAN Card/Driving License)",
+                    "Receipt Of Payment Of Water Tax For Separate Water Connection With Meter",
+                    "Photo Of Condom Wending Machine",
+                    "NOC Of Fire Brigade Department",
+                    "Copy Of Partnership Registration(If Partner)",
+                    "Map Of Business Place 3 Blue Print With Measurement Of Site And Plan",
+                    "Smoking Zone Photo (1 Smoking Zone For 30 Rooms)",
+                    "Receipt Of Payment Of Current Year Property Tax / NOC Of Tax Collection And Taxation Department",
+                    "Occupancy Letter Of Business From Construction Department",
+                    "Approved Map Of Construction Department",
+                    "Copy Of Registered Tenancy Agreement If Place Of Business Is On Tenancy And Owner NOC(If Rented)",
+                    "Applicant Address Proof(Aadhaar Card/Property Tax Receipt)"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=10"
+            },
+            {
+                "Service": "H-4 Marriage/Banquet Hall License",
+                "Documents Required": [
+                    "If Business Is Under Galicha Vasti Nirmulan Then Related Dept NOC/Non Res Services Payment Receipt",
+                    "Map Of Business Place 3 Blue Print With Measurement Of Site And Plan",
+                    "Receipt Of Payment Of Water Tax For Separate Water Connection With Meter",
+                    "Applicant Address Proof(Aadhaar Card/Property Tax Receipt)",
+                    "Applicant Identification Proof (Aadhaar Card/PAN Card/Driving License)",
+                    "Map Of Business Place 3 Blue Print With Measurement Of Site And Plan",
+                    "Receipt Of Payment Of Current Year Property Tax / NOC Of Tax Collection And Taxation Department",
+                    "NOC Of Fire Brigade Department",
+                    "Receipt Of Payment Of Water Tax For Separate Water Connection With Meter",
+                    "NOC of Building Department",
+                    "Rent Agreement & Non-Objectionable Letter Of Owner(If Property Is Rented)",
+                    "Applicant Address Proof(Aadhaar Card/Property Tax Receipt)",
+                    "Applicant Identification Proof (Aadhaar Card/PAN Card/Driving License)",
+                    "NOC Of Fire Brigade Department",
+                    "Bhogvata Patra(Occupancy Certificate)",
+                    "Company MOU/Partnership (Aadhar Card/Property Tax Receipt)"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=11"
+            },
+            {
+                "Service": "H-5 Salon/Beauty Parlor License",
+                "Documents Required": [
+                    "Beauty Parlour Course Completion Certificate (For Beauty Parlour)",
+                    "Map Of Business Place 3 Blue Print With Measurement Of Site And Plan",
+                    "Applicant Address Proof(Aadhaar Card/Property Tax Receipt)",
+                    "Applicant Identification Proof (Aadhaar Card/PAN Card/Driving License)",
+                    "Map Of Business Place 3 Blue Print With Measurement Of Site And Plan",
+                    "Applicant Address Proof(Aadhaar Card/Property Tax Receipt)",
+                    "If Business Is Under Galicha Vasti Nirmulan Then Related Department NOC",
+                    "Receipt Of Non-Resident Service Charges",
+                    "Applicant Identification Proof (Aadhaar Card/PAN Card/Driving License)",
+                    "Receipt Of Payment Of Current Year Property Tax / NOC Of Tax Collection And Taxation Department",
+                    "Company MOU/Partnership (Aadhar Card/Property Tax Receipt)",
+                    "Bhogvata Patra(Occupancy Certificate)",
+                    "Beauty Parlour Course Completion Certificate (For Beauty Parlour)",
+                    "If Non-Resident (Register Rent Agreement/ Owner NOC)"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=12"
+            },
+            {
+                "Service": "H-6 Egg Sale/ Poultry License",
+                "Documents Required": [
+                    "Printed Application In Favour Of Health Officer, Pune Municipal Corporation.",
+                    "If Business Is Under Galicha Vasti Nirmulan Then Related Dept NOC/Non Res Services Payment Receipt",
+                    "Bhogvat Letter",
+                    "Rent / Rental Agreement (If Occupancy Space Is Rented) / Non-Objectionable Letter Of Original Owner",
+                    "Business Space Maps With 3 Blue Print Sites Plans",
+                    "Receipt Of Payment Of Water Tax For Separate Water Connection With Meter (Only For Poultry)",
+                    "Receipt Of Payment Of Current Year Property Tax NOC Of Tax Collection And Taxation Department",
+                    "Receipt Of Payment Of Current Year Property Tax NOC Of Tax Collection And Taxation Department",
+                    "Receipt Of Payment Of Water Tax For Separate Water Connection With Meter",
+                    "Map Of Business Place",
+                    "Blue Print With Measurement Of Site With Plan / Map Of Business Place"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=13"
+            },
+            {
+                "Service": "H-7 Panpatti Shop License Sale",
+                "Documents Required": [
+                    "Map Of Business Place 3 Blue Print With Measurement Of Site And Plan",
+                    "Receipt Of Payment Of Fee From Encroachment Department In Case Of Stall In Public Space",
+                    "Ownership Consent In Case Of Private Premises",
+                    "If Business Is Under Galicha Vasti Nirmulan Then Related Dept NOC/ Non Residential Services Payment Receipt",
+                    "Copy Of Registered Tenancy Agreement If Place Of Business Is On Tenancy & Owner NOC (If Rented)",
+                    "Receipt Of Payment Of Current Year Property Tax / NOC Of Tax Collection And Taxation Department"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=14"
+            },
+            {
+                "Service": "H-8 License Of Kiln For Roasting Grain (Phutan Etc.)",
+                "Documents Required": [
+                    "Registered Rent Agreement & NOC Of Owner",
+                    "Map Of Business Place 3 Blue Print With Measurement Of Site And Plan",
+                    "If Business Is Under Galicha Vasti Nirmulan Then Related Dept NOC/Non Res Services Payment Receipt",
+                    "NOC Of Fire Brigade Department",
+                    "Map Of Business Place 3 Blue Print With Measurement Of Site And Plan",
+                    "NOC Of Fire Brigade Department",
+                    "Registered Rent Agreement & NOC Of Owner",
+                    "NOC Of Building Dept/Completion Certificate",
+                    "If Business Is Under Galicha Vasti Nirmulan Then Related Dept NOC/Non Res Services Payment Receipt",
+                    "Registered Rent Agreement & NOC Of Owner"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=15"
+            },
+            {
+                "Service": "H-9 Sugarcane Juice Shop License",
+                "Documents Required": [
+                    "If Business Is Under Galicha Vasti Nirmulan Then Related Dept NOC/Non Res Services Payment Receipt",
+                    "Registered Rent Agreement & NOC Of Owner",
+                    "Business License Of Ras Gurhal",
+                    "Blue Print With Measurement Of Site With Plan / Map Of Business Place",
+                    "Receipt Of Payment Of Water Tax For Separate Water Connection With Meter",
+                    "Receipt Of Payment Of Current Year Property Tax NOC Of Tax Collection And Taxation Department",
+                    "Non Residential Services Payment Receipt"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=16"
+            },
+            {
+                "Service": "Marriage Hall, Lodging, Ice Fruit - Ice, Grain Kiln, Salon/Beauty Parlour,Panpatti, Sale Of Eggs/Poultry, Skin-Bones, Rasgu-Hal, Animals For Feeding Regarding The Cancellation Of The License Issued",
+                "Documents Required": [
+                    "Original Certificate",
+                    "Application Form With Reason",
+                    "No Dues Certificate"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "No",
+                "Output Certificate Format": "PDF",
+                "application link / url": null
+            },
+            {
+                "Service": "Obtaining A New License (Beef, Pork, Mutton, Chicken, Fish)",
+                "Documents Required": [
+                    "Blue Print With Measurement Of Site With Plan / Map Of Business Place",
+                    "Printed Application In Favour Of Health Officer, Pune Municipal Corporation.",
+                    "Property Tax NOC",
+                    "NOC  Of Construction Department",
+                    "Receipt Of Income For The Current Year/Tax Collection And Taxation NOC Of Division",
+                    "Receipt Of Payment Of Water Tax For Separate Water Connection With Meter",
+                    "Shop Photograph",
+                    "Aadhaar Card",
+                    "In Case Of Society, Certificate Of Nomination Of Society",
+                    "Consent Letter / Agreement / Certificate Of Refusal From Owner Of Premises",
+                    "Frozen Chicken - Permit No. Of Skyscraper Department",
+                    "Proof Of Land Ownership / And Receipt Of Payment Of Property Tax"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=114"
+            },
+            {
+                "Service": "Regarding Change Of Name Of Licensee/Partner On License Issued For Mangal Office, Lodging, Ice Fruit - Ice, Grain Kiln, Salon/Beauty Parlour, Panpatti, Egg Sale / Poultry, Skin-Bone, Rasgu-Hal, Animal Husbandry",
+                "Documents Required": [
+                    "Copy Of Registered Tenancy Agreement If Place Of Business Is On Tenancy & Owner NOC (If Rented)",
+                    "Copy Of Registered Tenancy Agreement If Place Of Business Is On Tenancy And Owner NOC(If Rented)",
+                    "Applicant's Nominee Address Proof (Aadhaar Card/Property Tax Payment Receipt)",
+                    "No Dues Certificate",
+                    "If Business Is Under Galicha Vasti Nirmulan Then Related Dept NOC/ Non Residential Services Payment Receipt"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": null
+            },
+            {
+                "Service": "Regarding Getting Second Copy Of License Issued For Mangal Office, Lodging, Ice Fruit - Ice, Grain Kiln, Salon/Beauty Parlour, Panpatti, Egg Sale / Poultry, Skin-Bone, Sugarcane Juice Shop License, Animal Husbandry",
+                "Documents Required": [
+                    "No Dues Certificate",
+                    "Original Certificate",
+                    "Affidavit On 100Rs Stamp Paper",
+                    "Application Form With Reason"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": null
+            },
+            {
+                "Service": "Regarding The Change In The Number Of Shares In License Issued For Mangal Office, Lodging, Ice Fruit-Ice, Granary, Salon/Beauty Parlour, Panpatti, Sale Of Eggs / Poultry, Skin-Bones, Sugarcane Juice Shop License, Animal Husbandry",
+                "Documents Required": [
+                    "Application",
+                    "Affidavit",
+                    "Original Certificate"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=139"
+            },
+            {
+                "Service": "Regarding Transfer/Handover Of License Granted For Mangal Office, Lodging, Ice Fruit-Ice, Granary, Salon/Beauty Parlour, Panpatti, Egg Sale / Poultry, Skin-Bone, Sugarcane Juice Shop License, Animal Husbandry",
+                "Documents Required": [
+                    "No Dues Certificate",
+                    "Application Form With Reason"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=134"
+            },
+            {
+                "Service": "Renewal For License Of Application For Registration/ Renewal Of Registration Under Section 5 Of The Bombay Nursing Home Registration Act, 1949, Under Rules 4 And 6",
+                "Documents Required": [
+                    "NOC Of Fire Brigade Department",
+                    "Updated Registration Certificate Registered With Maharashtra Pollution Control Board",
+                    "Updated Registration Certificates Of The Medical Practitioner Registered With Maharashtra Medical Council And Concerned Medical Councils Of Maharashtra State",
+                    "Educational Certificates Of Nursing Cadre (Nurse With Qualification As Auxiliary Nursing Midwifery Or General Nursing Midwifery Is Mandatory) Copies Of Updated Registration Certificates Of Nurses Registered With Maharashtra Nursing Council",
+                    "Receipt Of Payment Of Water Tax For Separate Water Connection With Meter",
+                    "Medical Practitioners, Degree/Graduate Certificates of Medical Education, Degree/Graduate Certificates of Educational Enhancement, Certificates of Enhanced Educational Qualification Appointment Letters And Their Own Letter Of Acceptance Of Appointment In C (...)",
+                    "Receipt Of Income For The Current Year/Tax Collection And Taxation NOC Of Division",
+                    "Photocopy Of Nursing Home Registration Certificate",
+                    "Biomedical No Dues Certificate",
+                    "Photocopies Of The Boards Displayed In The Facade Of The Hospital Showing The Tariff Of Treatment Provided In The Hospital And The Code Of Patient Rights",
+                    "If The Business Is In The Form Of A Company Or Partnership, A Copy Of The Registered Partnership, In Case Of A Company, A Copy Of The Articles Of Association Of The Company / A Copy Of The Registration Certificate Of The Office Of The Charity Commissioner, (...)",
+                    "City Family Welfare Office, Pune M.N.P. Family Planning Surgery Letter From (If Maternity Bed)",
+                    "Copy Of Registered Tenancy Agreement If The Place Of Business Is On Tenancy Agreement."
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=142"
+            },
+            {
+                "Service": "Renewal Of License (Beef, Pork, Mutton, Chicken, Fish)",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "Yes",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=143"
+            },
+            {
+                "Service": "Renewal Of License For Marriage Hall, Lodging, Fruit - Ice , Roasted Grain, Salon/Beauty Parlour, Panpatti, Egg Selling/Poultry, Rasgular , Animal Stable",
+                "Documents Required": [
+                    "Original License Book",
+                    "Receipt Of Water Tax For The Current Year",
+                    "NOC Of Fire Brigade Department",
+                    "Receipt Of Income For The Current Year/Tax Collection And Taxation NOC Of Division",
+                    "Printed Application In Favour Of Health Officer, Pune Municipal Corporation."
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": null
+            },
+            {
+                "Service": "Transfer Of License / Owner Name Change For Application For Registration/ Renewal Of Registration Under Section 5 Of The Bombay Nursing Home Registration Act, 1949, Under Rules 4 And 6",
+                "Documents Required": [
+                    "No Dues Certificate",
+                    "Application Form With Reason"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Sanitary Inspector",
+                    "Level 2 (L2) Approver": "Ward Medical Officer",
+                    "Level 3 (L3) Approver": "Assistant Medical Officer of Health",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "No",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=186"
+            }
+        ]
+    },
+    {
+        "Department": "FIRE BRIGADE",
+        "Service": [
+            {
+                "Service": "Exhibition NOC With Fire Tender",
+                "Documents Required": [
+                    "Sanctioned Drawing Map",
+                    "\u201cB\u201d Form Of License Agency For The Fire Fighting System Made In The Building / Premises",
+                    "Detail Of Arrangement For Fire Fighting Will Be Made At The Exhibition / Program Place",
+                    "Sanctioned Drawing Map",
+                    "Firm Estabilishment Proof",
+                    "Request Letter Of Organizer Along With The Details Of Program / Exhibition",
+                    "\u201cB\u201d Form Of License Agency For The Fire Fighting System Made In The Building / Premises",
+                    "Detail Of Arrangement For Fire Fighting Will Be Made At The Exhibition / Program Place",
+                    "Request Letter Of Organizer Along With The Details Of Program / Exhibition"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Fire Station Officer",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=110"
+            },
+            {
+                "Service": "NOC For Educational, Shopping Malls, Industry, Marriage/Party Halls",
+                "Documents Required": [
+                    "\u201cA\u201d / \u201cB\u201d Form Of License Agency For The Fire Fighting System Made In Building/Premises Of The Business",
+                    "Request Letter From Owner Of The Business Along With The Details Of Business",
+                    "\u201cA\u201d / \u201cB\u201d Form Of License Agency For The Fire Fighting System Made In Building/Premises Of The Business",
+                    "Firm Estabilishment Proof",
+                    "Photo Copy Of Refilling Of Fire Extinguishers, Self Attested.",
+                    "No Objection Certificate For The Society Members Where The Business Is Situated (If Required)",
+                    "Completion /Sanction Plan Certificate Of The Place /Building Where The Business Situated",
+                    "Test",
+                    "Photo Copy Of MSEDCL Bill ( Light Bill), Self Attested",
+                    "Photo Copy Of Latest PMC Tax Receipt, Self Attested",
+                    "Shop Act License, Self Attested.",
+                    "Previous Fire NOC",
+                    "Request Letter From Owner Of The Business Along With The Details Of Business",
+                    "Photo Copy Of Refilling Of Fire Extinguishers, Self Attested.",
+                    "No Objection Certificate For The Society Members Where The Business Is Situated (If Required)",
+                    "Completion /Sanction Plan Certificate Of The Place /Building Where The Business Situated",
+                    "Test",
+                    "Photo Copy Of MSEDCL Bill ( Light Bill), Self Attested",
+                    "Photo Copy Of Latest PMC Tax Receipt, Self Attested",
+                    "Shop Act License, Self Attested.",
+                    "Previous Fire NOC"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Fire Station Officer",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": null
+            },
+            {
+                "Service": "NOC For Fire Tender Requirement",
+                "Documents Required": [
+                    "Firm Estabilishment Proof",
+                    "Detail Of Arrangement For Fire Fighting Will Be Made At The Exhibition / Program Place",
+                    "Request Letter Of Organizer Along With The Details Of Program / Exhibition",
+                    "\u201cB\u201d Form Of License Agency For The Fire Fighting System Made In The Building / Premises",
+                    "Detail Of Arrangement For Fire Fighting Will Be Made At The Exhibition / Program Place",
+                    "Request Letter Of Organizer Along With The Details Of Program / Exhibition",
+                    "\u201cB\u201d Form Of License Agency For The Fire Fighting System Made In The Building / Premises"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Fire Station Officer",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=39"
+            },
+            {
+                "Service": "NOC For Hospital / Clinic / Nursing Home",
+                "Documents Required": [
+                    "Shop Act License, Self Attested.",
+                    "Previous Fire NOC",
+                    "Shop Act License, Self Attested.",
+                    "Receipt Of Water Tax For The Current Year",
+                    "\u201cA\u201d / \u201cB\u201d Form Of License Agency For The Fire Fighting System Made In Building/Premises Of The Business",
+                    "Photo Copy Of MSEDCL Bill ( Light Bill), Self Attested",
+                    "Photo Copy Of Latest PMC Tax Receipt, Self Attested",
+                    "Request Letter From Owner Of The Business Along With The Details Of Business",
+                    "Photo Copy Of Refilling Of Fire Extinguishers, Self Attested.",
+                    "No Objection Certificate For The Society Members Where The Business Is Situated (If Required)",
+                    "Previous Fire NOC",
+                    "Completion /Sanction Plan Certificate Of The Place /Building Where The Business Situated",
+                    "\u201cA\u201d / \u201cB\u201d Form Of License Agency For The Fire Fighting System Made In Building/Premises Of The Business",
+                    "Photo Copy Of MSEDCL Bill ( Light Bill), Self Attested",
+                    "Photo Copy Of Latest PMC Tax Receipt, Self Attested",
+                    "Request Letter From Owner Of The Business Along With The Details Of Business",
+                    "Photo Copy Of Refilling Of Fire Extinguishers, Self Attested.",
+                    "No Objection Certificate For The Society Members Where The Business Is Situated (If Required)",
+                    "Completion /Sanction Plan Certificate Of The Place /Building Where The Business Situated"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Fire Station Officer",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=37"
+            },
+            {
+                "Service": "NOC For Hotels (No Star Hotels)",
+                "Documents Required": [
+                    "Shop Act License, Self Attested.",
+                    "Completion /Sanction Plan Certificate Of The Place /Building Where The Business Situated",
+                    "Photo Copy Of Refilling Of Fire Extinguishers, Self Attested.",
+                    "Request Letter From Owner Of The Business Along With The Details Of Business",
+                    "Photo Copy Of Refilling Of Fire Extinguishers, Self Attested.",
+                    "\u201cA\u201d / \u201cB\u201d Form Of License Agency For The Fire Fighting System Made In Building/Premises Of The Business",
+                    "No Objection Certificate For The Society Members Where The Business Is Situated (If Required)",
+                    "Previous Fire NOC",
+                    "Photo Copy Of MSEDCL Bill ( Light Bill), Self Attested",
+                    "Firm Estabilishment Proof",
+                    "Photo Copy Of MSEDCL Bill ( Light Bill), Self Attested",
+                    "Photo Copy Of Latest PMC Tax Receipt, Self Attested",
+                    "Shop Act License, Self Attested.",
+                    "\u201cA\u201d / \u201cB\u201d Form Of License Agency For The Fire Fighting System Made In Building/Premises Of The Business",
+                    "No Objection Certificate For The Society Members Where The Business Is Situated (If Required)",
+                    "Previous Fire NOC",
+                    "Request Letter From Owner Of The Business Along With The Details Of Business",
+                    "Photo Copy Of Latest PMC Tax Receipt, Self Attested",
+                    "Completion /Sanction Plan Certificate Of The Place /Building Where The Business Situated"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Fire Station Officer",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=35"
+            },
+            {
+                "Service": "NOC For Hotels (Star Hotels)",
+                "Documents Required": [
+                    "\u201cA\u201d / \u201cB\u201d Form Of License Agency For The Fire Fighting System Made In Building/Premises Of The Business",
+                    "Firm Estabilishment Proof",
+                    "Request Letter Of Organizer Along With The Details Of Program / Exhibition",
+                    "Request Letter From Owner Of The Business Along With The Details Of Business",
+                    "\u201cA\u201d / \u201cB\u201d Form Of License Agency For The Fire Fighting System Made In Building/Premises Of The Business",
+                    "Photo Copy Of Refilling Of Fire Extinguishers, Self Attested.",
+                    "No Objection Certificate For The Society Members Where The Business Is Situated (If Required)",
+                    "Previous Fire NOC",
+                    "Photo Copy Of MSEDCL Bill ( Light Bill), Self Attested",
+                    "Photo Copy Of Latest PMC Tax Receipt, Self Attested",
+                    "Shop Act License, Self Attested.",
+                    "Completion /Sanction Plan Certificate Of The Place /Building Where The Business Situated",
+                    "Completion /Sanction Plan Certificate Of The Place /Building Where The Business Situated",
+                    "Request Letter Of Organizer Along With The Details Of Program / Exhibition",
+                    "Shop Act License, Self Attested.",
+                    "Photo Copy Of Latest PMC Tax Receipt, Self Attested",
+                    "Photo Copy Of MSEDCL Bill ( Light Bill), Self Attested",
+                    "Previous Fire NOC",
+                    "No Objection Certificate For The Society Members Where The Business Is Situated (If Required)",
+                    "Photo Copy Of Refilling Of Fire Extinguishers, Self Attested.",
+                    "Request Letter From Owner Of The Business Along With The Details Of Business"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Fire Station Officer",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=36"
+            },
+            {
+                "Service": "NOC For Lodging Or Rooming Houses",
+                "Documents Required": [
+                    "Completion /Sanction Plan Certificate Of The Place /Building Where The Business Situated",
+                    "Photo Copy Of MSEDCL Bill ( Light Bill), Self Attested",
+                    "Shop Act License, Self Attested.",
+                    "Photo Copy Of Latest PMC Tax Receipt, Self Attested",
+                    "Photo Copy Of Refilling Of Fire Extinguishers, Self Attested.",
+                    "No Objection Certificate For The Society Members Where The Business Is Situated (If Required)",
+                    "\u201cA\u201d / \u201cB\u201d Form Of License Agency For The Fire Fighting System Made In Building/Premises Of The Business",
+                    "Completion /Sanction Plan Certificate Of The Place /Building Where The Business Situated",
+                    "Request Letter From Owner Of The Business Along With The Details Of Business",
+                    "Firm Estabilishment Proof",
+                    "Photo Copy Of Latest PMC Tax Receipt, Self Attested",
+                    "\u201cA\u201d / \u201cB\u201d Form Of License Agency For The Fire Fighting System Made In Building/Premises Of The Business",
+                    "No Objection Certificate For The Society Members Where The Business Is Situated (If Required)",
+                    "Previous Fire NOC",
+                    "Photo Copy Of MSEDCL Bill ( Light Bill), Self Attested",
+                    "Shop Act License, Self Attested.",
+                    "Photo Copy Of Refilling Of Fire Extinguishers, Self Attested.",
+                    "Previous Fire NOC",
+                    "Request Letter From Owner Of The Business Along With The Details Of Business"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Fire Station Officer",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=34"
+            },
+            {
+                "Service": "NOC For LPG, CNG, Diesel - Petrol Filling Station",
+                "Documents Required": [
+                    "Approved Plan Of Filling Station By Explosive Dept. Govt. Of the India.",
+                    "Firm Estabilishment Proof",
+                    "Application Of The Owner / Company",
+                    "Application Of The Owner / Company",
+                    "Commencement Letter By Explosive Dept. Govt. Of The India.",
+                    "Approved Plan Of Filling Station By Explosive Dept. Govt. Of the India.",
+                    "Commencement Letter By Explosive Dept. Govt. Of The India."
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Fire Station Officer",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": null
+            },
+            {
+                "Service": "NOC For LPG Reticulated System In Building",
+                "Documents Required": [
+                    "Approved Plan Of The Building - Layout, Building Plan",
+                    "Proposed Drawing Of The Reticulated System",
+                    "Approved Plan Of The Building - Layout, Building Plan",
+                    "Proposed Drawing Of The Reticulated System",
+                    "\u201cA\u201d / \u201cB\u201d Form Of License Agency For The Fire Fighting System Made In Building/Premises Of The Business",
+                    "Completion Certificate Of The Building",
+                    "\u201cA\u201d / \u201cB\u201d Form Of License Agency For The Fire Fighting System Made In Building/Premises Of The Business",
+                    "Application Of The Developer / Society / Company",
+                    "Receipt Of Water Tax For The Current Year",
+                    "Completion Certificate Of The Building",
+                    "Application Of The Developer / Society / Company"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Fire Station Officer",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=33"
+            },
+            {
+                "Service": "NOC For Organizing Exhibition/Program, Cultural Program , Pendol, Stage For Temporary Structure",
+                "Documents Required": [
+                    "\u201cB\u201d Form Of License Agency For The Fire Fighting System Made In The Building / Premises",
+                    "Request Letter Of Organizer Along With The Details Of Program / Exhibition",
+                    "Firm Estabilishment Proof",
+                    "Application Form With Reason",
+                    "Application Of The Owner / Company",
+                    "Request Letter Of Organizer Along With The Details Of Program / Exhibition",
+                    "Detail Of Arrangement For Fire Fighting Will Be Made At The Exhibition / Program Place",
+                    "\u201cB\u201d Form Of License Agency For The Fire Fighting System Made In The Building / Premises",
+                    "Application Of The Owner / Company",
+                    "Detail Of Arrangement For Fire Fighting Will Be Made At The Exhibition / Program Place"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Fire Station Officer",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=2"
+            }
+        ]
+    },
+    {
+        "Department": "WATER SUPPLY",
+        "Service": [
+            {
+                "Service": "Certificate Of No Arrears",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Junior Engineer",
+                    "Level 2 (L2) Approver": "Deputy Engineer",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/waterTaxOtherSevices?pamId=130"
+            },
+            {
+                "Service": "Change In Ownership/ Change In Name",
+                "Documents Required": [
+                    "Affidavit",
+                    "Death Certificate",
+                    "Purchase Letter",
+                    "Photo Copy Of MSEDCL Bill ( Light Bill), Self Attested",
+                    "Index II",
+                    "Paid Property Tax Receipt/ Property Tax NOC"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/waterTaxOtherSevices?pamId=128"
+            },
+            {
+                "Service": "Change In Use",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "-",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": null
+            },
+            {
+                "Service": "Changing The Connection Size",
+                "Documents Required": [
+                    "Water Tax Bill",
+                    "Aadhaar Card",
+                    "Property Tax Bill"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/waterTaxOtherSevices?pamId=78"
+            },
+            {
+                "Service": "New/ Reconnect Water Connection",
+                "Documents Required": [
+                    "Building Sanctioned Plan/Drawing Map",
+                    "Water Line Layout Plan",
+                    "Applicant's Undertaking On Stamp Paper(RS 500, Notarized)",
+                    "Applicant's Undertaking On Stamp Paper(RS 500, Notarized)",
+                    "Bhogvata Patra(Occupancy Certificate)",
+                    "Owner NOC",
+                    "Bhogvata Patra(Occupancy Certificate)",
+                    "Valid Plumbing License",
+                    "Paid Property Tax Receipt/ Property Tax NOC",
+                    "Water Line Layout Plan",
+                    "Building Sanctioned Plan/Drawing Map",
+                    "Paid Property Tax Receipt/ Property Tax NOC",
+                    "Water Line Development Charges/Water Line Development NOC",
+                    "Valid Plumbing License",
+                    "Meter NOC",
+                    "Water Line Development Charges/Water Line Development NOC",
+                    "Valid Plumbing License",
+                    "Applicant's Undertaking On Stamp Paper(RS 500, Notarized)",
+                    "If Tenant No Objection Letter From Owner",
+                    "Society NOC",
+                    "Medical Certificate (MBBS Only)",
+                    "Meter NOC",
+                    "Bhogvata Patra(Occupancy Certificate)",
+                    "Shop Act License, Self Attested",
+                    "Water Line Layout Plan",
+                    "Building Sanctioned Plan/Drawing Map",
+                    "Paid Property Tax Receipt/ Property Tax NOC",
+                    "Water Line Development Charges/Water Line Development NOC",
+                    "Meter NOC"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=61"
+            },
+            {
+                "Service": "Non-Availability Of Water",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Deputy Engineer",
+                    "Level 2 (L2) Approver": "",
+                    "Level 3 (L3) Approver": "",
+                    "Level 4 (L4) Approver": "",
+                    "Level 5 (L5) Approver": ""
+                },
+                "Physical Verification": "No",
+                "Output Certificate Format": "Yes",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=190"
+            },
+            {
+                "Service": "Plumbing License / Renewal",
+                "Documents Required": [
+                    "Ration Card",
+                    "Exam Certificate For Plumbing",
+                    "Certificate Of Completion Of Academics(For Architects, Engineers, ITI)",
+                    "3 Years Of Experience Certificates Of Two Builders Or Architects(Architechts Only)",
+                    "Identity Proof(Driving License, Pan Card, Voter Id)",
+                    "School Leaving Certificate(7th Pass Only)",
+                    "Plumber Photo",
+                    "Plumber Photo"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Junior Engineer",
+                    "Level 2 (L2) Approver": "Deputy Engineer",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=166"
+            },
+            {
+                "Service": "Tap Repair",
+                "Documents Required": [
+                    "Water Tax Bill",
+                    "Aadhaar Card",
+                    "Property Tax Bill"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/waterTaxOtherSevices?pamId=77"
+            },
+            {
+                "Service": "Temporary Permanent Disconnection Of Water Connection",
+                "Documents Required": [
+                    "Paid Property Tax Receipt/ Property Tax NOC",
+                    "Applicant Identification Proof (Aadhaar Card/PAN Card/Driving License)"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Junior Engineer",
+                    "Level 2 (L2) Approver": "Deputy Engineer",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "Yes",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/waterTaxOtherSevices?pamId=131"
+            }
+        ]
+    },
+    {
+        "Department": "BUILDING PERMISSION / BUILDING DEVELOPMENT",
+        "Service": [
+            {
+                "Service": "Issuance Of Building Permit",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://building.punecorporation.org/"
+            },
+            {
+                "Service": "Issuance Of Occupancy Certificate",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://building.punecorporation.org/"
+            },
+            {
+                "Service": "Issuance Of Plinth Certificate",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/customForm?pamId=90"
+            },
+            {
+                "Service": "Site Plan",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/buildingDevelopmentCFCScreen BUILDING DEVELOPMENT"
+            },
+            {
+                "Service": "Zone Certificate",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "No",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/zoneCertificate"
+            }
+        ]
+    },
+    {
+        "Department": "DRAINAGE",
+        "Service": [
+            {
+                "Service": "Sewage Connection",
+                "Documents Required": [
+                    "Four Copies Of Maps",
+                    "Tax Department Certificate Of No Arrears",
+                    "Certificate Of Society",
+                    "Copy of Building Permit Consent Letter",
+                    "Copy of Power of Attorney (If Required)",
+                    "Ownership Documents",
+                    "Plumber License Certificate"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "Yes",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=91"
+            }
+        ]
+    },
+    {
+        "Department": "PROPERTY TAX",
+        "Service": [
+            {
+                "Service": "Getting Property Tax Exemption",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=205"
+            },
+            {
+                "Service": "Preparation Of Tax Demand Letter",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "https://propertytax.punecorporation.org/"
+            },
+            {
+                "Service": "Property Demolition and Reconstruction Tax",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "",
+                    "Level 2 (L2) Approver": "",
+                    "Level 3 (L3) Approver": "",
+                    "Level 4 (L4) Approver": "",
+                    "Level 5 (L5) Approver": ""
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=203"
+            },
+            {
+                "Service": "Property Division Into Sub-Divisions",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=204"
+            },
+            {
+                "Service": "Property Tax Deduction",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": null
+            },
+            {
+                "Service": "PT5 - New Taxation Service",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": null
+            },
+            {
+                "Service": "PT5 - Property Tax Title Transfer",
+                "Documents Required": [
+                    "Affidavit Letter (Regarding Inheritance)",
+                    "Death Certificate",
+                    "Reward Letter",
+                    "Affidavit Letter (Regarding Inheritance)",
+                    "Issued Letter",
+                    "Property Tax NOC",
+                    "Government Certificate A Company Change Of Name",
+                    "Society NOC (At New Case Need To Add Above Two Documents))",
+                    "Index II",
+                    "Property Tax NOC",
+                    "Aggreement of Purchased(Kharedikhat) Document.",
+                    "Property Tax NOC",
+                    "7 | 12 Utara",
+                    "Property Tax NOC",
+                    "Death Certificate",
+                    "Property Card Utara",
+                    "Reward Letter",
+                    "Property Tax NOC",
+                    "Issued Letter",
+                    "Affidavit Letter (Regarding Inheritance)",
+                    "Reward Letter",
+                    "Death Certificate",
+                    "Property Tax NOC",
+                    "With Refernce To  Hon.Collector Office Register Utara And Hon.Standing Committee Decision/ Letter Number:NSJA/5444 Dated 04 Feb 2010 Owner's Name ,Remaining Dues Affidavit,Property Tax NOC.",
+                    "Property Tax NOC",
+                    "Issued Letter"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": null
+            },
+            {
+                "Service": "PT5 - Re-Taxation Service",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": null
+            },
+            {
+                "Service": "Registration Of Objections",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "",
+                "Output Certificate Format": "NA",
+                "application link / url": "https://propertytax.punecorporation.org/"
+            },
+            {
+                "Service": "Self Assessment",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "https://propertytax.punecorporation.org/"
+            }
+        ]
+    },
+    {
+        "Department": "GARDEN",
+        "Service": [
+            {
+                "Service": "Aquarium Ticket",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "No",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/aquariumService"
+            },
+            {
+                "Service": "Garden Ticket",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "No",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/GardanService"
+            },
+            {
+                "Service": "Photography Ticket",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "No",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/photographyTicketService"
+            }
+        ]
+    },
+    {
+        "Department": "ESTATE",
+        "Service": [
+            {
+                "Service": "Movie Shooting License",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "https://www.filmcell.maharashtra.gov.in/login"
+            }
+        ]
+    },
+    {
+        "Department": "COMPLAINT",
+        "Service": [
+            {
+                "Service": "Filling Potholes On Roads",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "https://complaint.pmc.gov.in/home"
+            },
+            {
+                "Service": "Illegal WaterConnection Complaint",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "https://complaint.pmc.gov.in/home"
+            },
+            {
+                "Service": "Keeping The City Clean",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "https://complaint.pmc.gov.in/home"
+            },
+            {
+                "Service": "Maintaining Gutter Covers",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "https://complaint.pmc.gov.in/home"
+            },
+            {
+                "Service": "Reporting Faulty Meters",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "https://complaint.pmc.gov.in/home"
+            },
+            {
+                "Service": "Water Connection Force Capacity Complaint",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "https://complaint.pmc.gov.in/home"
+            },
+            {
+                "Service": "Water Quality Complaint",
+                "Documents Required": [],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "No Approval",
+                    "Level 2 (L2) Approver": "-",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Not Specified",
+                "Output Certificate Format": "Not Specified",
+                "application link / url": "https://complaint.pmc.gov.in/home"
+            }
+        ]
+    },
+    {
+        "Department": "TREE AUTHORITY",
+        "Service": [
+            {
+                "Service": "Branch Cutting",
+                "Documents Required": [
+                    "Undertaking Form",
+                    "Photo Of The Branch To Be Cut (We Can Upload Multiple Photo Here)"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Tree Officer Level 1",
+                    "Level 2 (L2) Approver": "Tree Officer Level 2",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "PDF",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=69"
+            },
+            {
+                "Service": "Tree Cutting And Replantation",
+                "Documents Required": [
+                    "Tree Photo",
+                    "C-Form",
+                    "D-Form",
+                    "Approved Map Signed By Competent Engineer",
+                    "Work Order Copy",
+                    "Tree Photo",
+                    "Color Logic Map (Cut Tree In Red Color & 3 Plant Tree In Blue Color)",
+                    "Commencement Certificate",
+                    "Photo Of The Branch To Be Cut (We Can Upload Multiple Photo Here)",
+                    "Index Information",
+                    "D-Form",
+                    "C-Form",
+                    "D-Form",
+                    "C-Form",
+                    "C-Form",
+                    "D-Form",
+                    "Index Information",
+                    "D-Form",
+                    "Tree Photo",
+                    "Index II",
+                    "Map",
+                    "Property Tax NOC",
+                    "7/12 Tax Bill",
+                    "Architect Undertaken Letter",
+                    "C-Form",
+                    "Tree Photo",
+                    "C-Form",
+                    "D-Form",
+                    "C-Form",
+                    "D-Form",
+                    "Provisional NOC"
+                ],
+                "Levels of Approval": {
+                    "Level 1 (L1) Approver": "Tree Officer Level 1",
+                    "Level 2 (L2) Approver": "Tree Officer Level 2",
+                    "Level 3 (L3) Approver": "-",
+                    "Level 4 (L4) Approver": "-",
+                    "Level 5 (L5) Approver": "-"
+                },
+                "Physical Verification": "Yes",
+                "Output Certificate Format": "No",
+                "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=70"
+            }
+        ]
+    }
+]
