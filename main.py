@@ -6,9 +6,11 @@ from pydantic import BaseModel
 import os
 import google.generativeai as genai
 import json
+import httpx
 from datetime import datetime
 import logging
 from dotenv import load_dotenv
+import re
 
 # Load environment variables
 load_dotenv()
@@ -54,6 +56,15 @@ class ChatResponse(BaseModel):
     response: str
     timestamp: str
     service_references: list = []
+
+class ApplicationTrackRequest(BaseModel):
+    application_id: str
+
+class ApplicationTrackResponse(BaseModel):
+    remark: str
+    app_status: str
+    token: str
+    timestamp: str
 
 class MunicipalChatbot:
     def __init__(self, json_file_path):
@@ -127,6 +138,110 @@ class MunicipalChatbot:
         
         return context
     
+    def is_tracking_request(self, user_message):
+        """Check if the user message is asking for application tracking"""
+        tracking_keywords = [
+            'track', 'status', 'check application', 'application status', 'track application',
+            'my application', 'application id', 'token', 'check status', 'where is my',
+            'application tracking', 'track my', 'status of', 'check my application',
+            'application number', 'reference number', 'tracking number', 'follow up',
+            'progress', 'update', 'tracker', 'trace', 'follow'
+        ]
+        
+        # Convert to lowercase for case-insensitive matching
+        message_lower = user_message.lower()
+        
+        # Check for tracking keywords
+        return any(keyword in message_lower for keyword in tracking_keywords)
+    
+    def extract_application_id(self, user_message):
+        """Extract application ID from user message if present"""
+        # Look for patterns like: numbers, alphanumeric codes
+        patterns = [
+            r'\b([A-Z]{2}\d{14,})\b',     # Pattern like PL10000004252600772
+            r'\b([A-Z]{2,}\d{6,})\b',     # Pattern like ABC123456
+            r'\b(\d{8,})\b',              # Pattern like 12345678
+            r'\b([A-Z]\d{7,})\b',         # Pattern like A1234567
+            r'\b(\d{4,6}[-/]\d{4,6})\b',  # Pattern like 1234-5678 or 1234/5678
+            r'\b([A-Z]{1,3}\d{10,})\b',   # Pattern for longer alphanumeric IDs
+        ]
+        
+        for pattern in patterns:
+            match = re.search(pattern, user_message)
+            if match:
+                return match.group(1)
+        
+        return None
+
+    async def track_application(self, application_id):
+        """Call PMC API to track application status"""
+        try:
+            api_url = f"https://services.pmc.gov.in/getStatusByToken/{application_id}"
+            
+            # Create client with SSL verification disabled for government websites
+            async with httpx.AsyncClient(
+                timeout=15.0,
+                verify=False,  # Disable SSL verification for government sites
+                headers={
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+                    'Accept': 'application/json, text/plain, */*',
+                    'Accept-Language': 'en-US,en;q=0.9',
+                    'Accept-Encoding': 'gzip, deflate, br',
+                    'Connection': 'keep-alive',
+                }
+            ) as client:
+                response = await client.get(api_url)
+                
+                logger.info(f"API Response Status: {response.status_code}")
+                logger.info(f"API Response Content: {response.text[:200]}...")
+                
+                if response.status_code == 200:
+                    try:
+                        data = response.json()
+                        return {
+                            "success": True,
+                            "data": data
+                        }
+                    except ValueError as e:
+                        # If JSON parsing fails, check if it's HTML (error page)
+                        if 'html' in response.text.lower():
+                            return {
+                                "success": False,
+                                "error": "The application ID was not found in the PMC database"
+                            }
+                        else:
+                            return {
+                                "success": False,
+                                "error": f"Invalid response format from PMC API"
+                            }
+                elif response.status_code == 404:
+                    return {
+                        "success": False,
+                        "error": "Application ID not found in the PMC database"
+                    }
+                else:
+                    return {
+                        "success": False,
+                        "error": f"PMC API returned status code {response.status_code}"
+                    }
+                    
+        except httpx.TimeoutException:
+            return {
+                "success": False,
+                "error": "Request timed out. The PMC server might be busy. Please try again later."
+            }
+        except httpx.ConnectError:
+            return {
+                "success": False,
+                "error": "Unable to connect to PMC servers. Please check your internet connection and try again."
+            }
+        except Exception as e:
+            logger.error(f"Error tracking application {application_id}: {e}")
+            return {
+                "success": False,
+                "error": f"Unable to fetch application status. Please try again later or contact PMC customer service."
+            }
+
     def create_prompt(self, user_message, conversation_history=None):
         """Create the prompt for Gemini API"""
 
@@ -143,20 +258,22 @@ class MunicipalChatbot:
         prompt = f"""You are a friendly, helpful assistant for Pune Municipal Corporation (PMC) services. You're like a knowledgeable government office helper who gives clear, concise answers without overwhelming users with unnecessary details.
 
 KEY INSTRUCTIONS:
-1. **ANALYZE QUESTION TYPE FIRST**: Before responding, determine if it's a general inquiry, specific service request, document question, simple factual query, or needs clarification
-2. Respond like a human - be friendly, conversational, and direct
-3. Answer exactly what the user is asking for - don't provide extra information unless requested
-4. If they ask "how to get marriage certificate", give them the direct steps and link, not all possible related services
-5. Be concise but complete - provide essential information without jargon or technical details
-6. Only mention service ID if it's directly relevant to their question
-7. If something is unclear, ask for clarification rather than guessing
-8. **IMPORTANT**: When providing links, use this format: LINK:URL (e.g., "LINK:http://example.com"). This will create a clickable "LINK" text instead of showing the full URL.
+1. **ANALYZE QUESTION TYPE FIRST**: Before responding, determine if it's a general inquiry, specific service request, document question, simple factual query, APPLICATION TRACKING REQUEST, or needs clarification
+2. **APPLICATION TRACKING DETECTION**: If the user asks about tracking, checking status, or mentions application ID/token/reference number, respond with: "TRACK_APPLICATION_REQUEST" followed by your normal helpful response
+3. Respond like a human - be friendly, conversational, and direct
+4. Answer exactly what the user is asking for - don't provide extra information unless requested
+5. If they ask "how to get marriage certificate", give them the direct steps and link, not all possible related services
+6. Be concise but complete - provide essential information without jargon or technical details
+7. Only mention service ID if it's directly relevant to their question
+8. If something is unclear, ask for clarification rather than guessing
+9. **IMPORTANT**: When providing links, use this format: LINK:URL (e.g., "LINK:http://example.com"). This will create a clickable "LINK" text instead of showing the full URL.
 
 RESPONSE STYLE:
 - **VARY YOUR RESPONSE OPENERS**: Choose the most appropriate opener based on context and question type:
   - General help requests: "Sure, I can help you with..." or "I'd be happy to assist with..."
   - Specific service requests: "For [service name], you'll need..." or "To apply for [service name], follow these steps:"
   - Document/status questions: "Here's what you need to know about..." or "For [service name], the requirements are:"
+  - Application tracking: "I can help you track your application..." or "To check your application status..."
   - Clarification needed: "To better assist you, could you please clarify..." or "I need more information about..."
   - Simple factual questions: Start directly with the answer
   - Complex processes: "Let me break this down for you..." or "Here are the steps to..."
@@ -180,6 +297,7 @@ RESPONSE EXAMPLES:
 - Document requirements: "What documents do I need for birth certificate?" → "For a birth certificate, you'll need: - Hospital birth report - Parents' ID proof - Address proof..."
 - Simple question: "What is the contact number?" → "The PMC customer service number is 020-25501000."
 - Clarification: "I need help with property tax" → "To better assist you with property tax, could you please specify if you need help with payment, assessment, or something else?"
+- Application tracking: "I want to track my application" → "TRACK_APPLICATION_REQUEST I can help you track your application status. Please provide your application ID or reference number so I can check the current status for you."
 
 MUNICIPAL SERVICES DATA:
 {self.municipal_data}
@@ -206,6 +324,63 @@ Please provide a friendly, concise response that directly answers their question
     async def get_response(self, user_message, conversation_history=None):
         """Get response from Gemini API"""
         try:
+            # First, always check if the message contains an application ID (regardless of other content)
+            app_id = self.extract_application_id(user_message)
+            
+            if app_id:
+                # We found an application ID, track it immediately
+                logger.info(f"Found application ID: {app_id}, tracking immediately...")
+                tracking_result = await self.track_application(app_id)
+                
+                if tracking_result["success"]:
+                    data = tracking_result["data"]
+                    status_message = f"Application Status Update:\n\n"
+                    status_message += f"Application ID: {data.get('token', app_id)}\n"
+                    status_message += f"Status: {data.get('appStatus', 'Unknown')}\n"
+                    status_message += f"Remark: {data.get('remark', 'No additional information')}\n\n"
+                    
+                    # Add status interpretation
+                    status = data.get('appStatus', '').upper()
+                    if status == 'APPROVED':
+                        status_message += "Great news! Your application has been approved. You can proceed to collect your documents or certificate as applicable."
+                    elif status == 'PENDING':
+                        status_message += "Your application is currently being processed. Please wait for further updates."
+                    elif status == 'REJECTED':
+                        status_message += "Your application has been rejected. Please contact the relevant department for more information on next steps."
+                    elif status == 'IN_PROGRESS':
+                        status_message += "Your application is currently in progress. We'll notify you once there's an update."
+                    else:
+                        status_message += "Please contact PMC customer service at 020-25501000 for more details about this status."
+                    
+                    return {
+                        "response": status_message,
+                        "service_references": [],
+                        "is_tracking": True
+                    }
+                else:
+                    error_message = f"Sorry, I couldn't retrieve the status for application ID {app_id}. "
+                    error_message += f"Error: {tracking_result['error']}\n\n"
+                    error_message += "Please double-check your application ID and try again, or contact PMC customer service at 020-25501000 for assistance."
+                    
+                    return {
+                        "response": error_message,
+                        "service_references": [],
+                        "is_tracking": True
+                    }
+            
+            # Check if this is a tracking request without an ID
+            elif self.is_tracking_request(user_message):
+                # No application ID found, ask for it
+                ask_for_id = "I can help you track your application status! To check your application, I'll need your application ID or reference number.\n\n"
+                ask_for_id += "Please provide your application ID (it usually looks like ABC123456 or a series of numbers) and I'll get the current status for you."
+                
+                return {
+                    "response": ask_for_id,
+                    "service_references": [],
+                    "is_tracking": True,
+                    "needs_app_id": True
+                }
+
             # If model is not available, return a mock response
             if model is None:
                 logger.warning("Gemini model not available, returning mock response")
@@ -228,11 +403,21 @@ Please provide a friendly, concise response that directly answers their question
             )
 
             if response.text:
-                service_refs = self.extract_service_references(response.text)
-                return {
-                    "response": response.text,
+                # Check if the response indicates a tracking request
+                is_tracking = "TRACK_APPLICATION_REQUEST" in response.text
+                clean_response = response.text.replace("TRACK_APPLICATION_REQUEST", "").strip()
+                
+                service_refs = self.extract_service_references(clean_response)
+                result = {
+                    "response": clean_response,
                     "service_references": service_refs
                 }
+                
+                if is_tracking:
+                    result["is_tracking"] = True
+                    result["needs_app_id"] = True
+                    
+                return result
             else:
                 raise Exception("Empty response from Gemini API")
 
@@ -286,6 +471,30 @@ async def chat_endpoint(request: ChatRequest):
         
     except Exception as e:
         logger.error(f"Error in chat endpoint: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/track-application")
+async def track_application_endpoint(request: ApplicationTrackRequest):
+    """Dedicated endpoint for application tracking"""
+    try:
+        logger.info(f"Tracking application: {request.application_id}")
+        
+        # Call the tracking function
+        result = await chatbot.track_application(request.application_id)
+        
+        if result["success"]:
+            data = result["data"]
+            return ApplicationTrackResponse(
+                remark=data.get("remark", "OK"),
+                app_status=data.get("appStatus", "Unknown"),
+                token=data.get("token", request.application_id),
+                timestamp=datetime.now().isoformat()
+            )
+        else:
+            raise HTTPException(status_code=404, detail=result["error"])
+            
+    except Exception as e:
+        logger.error(f"Error tracking application: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/health")
