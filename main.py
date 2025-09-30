@@ -11,6 +11,7 @@ from datetime import datetime
 import logging
 from dotenv import load_dotenv
 import re
+import unicodedata
 
 # Load environment variables
 load_dotenv()
@@ -154,6 +155,27 @@ class MunicipalChatbot:
         # Check for tracking keywords
         return any(keyword in message_lower for keyword in tracking_keywords)
     
+    def detect_language(self, text):
+        """Detect if the text contains Marathi Devanagari script"""
+        if not text:
+            return 'en'
+        
+        # Count Devanagari characters
+        devanagari_count = 0
+        total_chars = 0
+        
+        for char in text:
+            if char.strip():  # Skip whitespace
+                total_chars += 1
+                # Check if character is in Devanagari Unicode block (U+0900-U+097F)
+                if '\u0900' <= char <= '\u097F':
+                    devanagari_count += 1
+        
+        # If more than 30% of characters are Devanagari, consider it Marathi
+        if total_chars > 0 and (devanagari_count / total_chars) > 0.3:
+            return 'mr'  # Marathi
+        return 'en'  # English (default)
+    
     def extract_application_id(self, user_message):
         """Extract application ID from user message if present"""
         # Look for patterns like: numbers, alphanumeric codes
@@ -244,7 +266,10 @@ class MunicipalChatbot:
 
     def create_prompt(self, user_message, conversation_history=None):
         """Create the prompt for Gemini API"""
-
+        
+        # Detect language of the user message
+        detected_language = self.detect_language(user_message)
+        
         # Build conversation context if provided
         conversation_context = ""
         if conversation_history:
@@ -255,18 +280,33 @@ class MunicipalChatbot:
                 conversation_context += f"{role.upper()}: {content}\n"
             conversation_context += "\n"
 
+        # Language-specific instructions
+        language_instruction = ""
+        if detected_language == 'mr':
+            language_instruction = """
+**LANGUAGE DETECTION**: The user's message contains Marathi Devanagari script. You MUST respond in Marathi (मराठी) using Devanagari script. Be natural and conversational in Marathi, using appropriate Marathi terms for government services and processes.
+"""
+        else:
+            language_instruction = """
+**LANGUAGE DETECTION**: The user's message is in English. Respond in English as usual.
+"""
+
         prompt = f"""You are a friendly, helpful assistant for Pune Municipal Corporation (PMC) services. You're like a knowledgeable government office helper who gives clear, concise answers without overwhelming users with unnecessary details.
+
+{language_instruction}
 
 KEY INSTRUCTIONS:
 1. **ANALYZE QUESTION TYPE FIRST**: Before responding, determine if it's a general inquiry, specific service request, document question, simple factual query, APPLICATION TRACKING REQUEST, or needs clarification
 2. **APPLICATION TRACKING DETECTION**: If the user asks about tracking, checking status, or mentions application ID/token/reference number, respond with: "TRACK_APPLICATION_REQUEST" followed by your normal helpful response
-3. Respond like a human - be friendly, conversational, and direct
-4. Answer exactly what the user is asking for - don't provide extra information unless requested
-5. If they ask "how to get marriage certificate", give them the direct steps and link, not all possible related services
-6. Be concise but complete - provide essential information without jargon or technical details
-7. Only mention service ID if it's directly relevant to their question
-8. If something is unclear, ask for clarification rather than guessing
-9. **IMPORTANT**: When providing links, use this format: LINK:URL (e.g., "LINK:http://example.com"). This will create a clickable "LINK" text instead of showing the full URL.
+3. **COMPLETE INFORMATION REQUIREMENT**: When asked about documents, requirements, or processes, you MUST provide ALL information available in the knowledge base. Do not summarize or truncate document lists - include every single document mentioned in the data.
+4. **DOCUMENT COMPLETENESS**: If the knowledge base shows 16 documents, you must list all 16. If it shows 5 documents, list all 5. Never provide partial lists.
+5. Respond like a human - be friendly, conversational, and direct
+6. Answer exactly what the user is asking for - don't provide extra information unless requested
+7. If they ask "how to get marriage certificate", give them the direct steps and link, not all possible related services
+8. Be concise but complete - provide essential information without jargon or technical details
+9. Only mention service ID if it's directly relevant to their question
+10. If something is unclear, ask for clarification rather than guessing
+11. **IMPORTANT**: When providing links, use this format: LINK:URL (e.g., "LINK:http://example.com"). This will create a clickable "LINK" text instead of showing the full URL.
 
 RESPONSE STYLE:
 - **VARY YOUR RESPONSE OPENERS**: Choose the most appropriate opener based on context and question type:
@@ -282,7 +322,7 @@ RESPONSE STYLE:
 - Give direct, actionable steps without unnecessary pleasantries
 - When mentioning links, use "LINK:URL" format instead of embedding the full URL in text
 - End with an offer for more help: "Let me know if you need anything else!" (only when it makes sense)
-- Keep responses under 200 words unless they ask for detailed information
+- **DOCUMENT LISTS MUST BE COMPLETE**: When listing documents, include EVERY document from the knowledge base. Count them if needed to ensure completeness.
 - **FORMAT LISTS PROPERLY**: When listing multiple items (documents, steps, requirements), use this exact format:
   - Item 1
   - Item 2
@@ -290,6 +330,7 @@ RESPONSE STYLE:
   Each item should be on its own line with a dash (-) at the beginning, followed by a space, then the item text
 - Use proper line breaks to make lists readable and well-structured
 - Put each list item on a separate line for better readability
+- **CRITICAL**: Never truncate or summarize document lists. If the data shows 16 documents, list all 16. If it shows 3 documents, list all 3.
 
 RESPONSE EXAMPLES:
 - General question: "What services do you offer?" → "Sure, I can help you with information about PMC services. We offer various municipal services including..."
@@ -299,12 +340,27 @@ RESPONSE EXAMPLES:
 - Clarification: "I need help with property tax" → "To better assist you with property tax, could you please specify if you need help with payment, assessment, or something else?"
 - Application tracking: "I want to track my application" → "TRACK_APPLICATION_REQUEST I can help you track your application status. Please provide your application ID or reference number so I can check the current status for you."
 
+MARATHI RESPONSE EXAMPLES:
+- General question: "तुम्ही कोणत्या सेवा देत?" → "नक्कीच, मी तुम्हाला PMC सेवांबद्दल माहिती देऊ शकतो. आम्ही विविध नगरपालिका सेवा देतो ज्यात..."
+- Specific service: "लग्नाचे प्रमाणपत्र कसे मिळेल?" → "लग्नाचे प्रमाणपत्र मिळवण्यासाठी, तुम्हाला ऑनलाइन अर्ज करावा लागेल LINK:http://example.com आणि हे कागदपत्रे सादर करावी लागतील: - लग्न अर्ज फॉर्म - वयाचा पुरावा..."
+- Document requirements: "जन्म प्रमाणपत्रासाठी कोणते कागदपत्रे लागतात?" → "जन्म प्रमाणपत्रासाठी तुम्हाला हे लागेल: - रुग्णालयातील जन्म अहवाल - पालकांचा ओळखपत्र - पत्ता पुरावा..."
+- Simple question: "संपर्क क्रमांक काय आहे?" → "PMC ग्राहक सेवा क्रमांक 020-25501000 आहे."
+- Application tracking: "माझा अर्ज ट्रॅक करायचा आहे" → "TRACK_APPLICATION_REQUEST मी तुमच्या अर्जाची स्थिती तपासण्यात मदत करू शकतो. कृपया तुमचा अर्ज क्रमांक किंवा संदर्भ क्रमांक द्या जेणेकरून मी तुमच्यासाठी सद्यस्थिती तपासू शकेन."
+
+CRITICAL DOCUMENT COMPLETENESS EXAMPLES:
+- If asked "documents for Marriage Hall License" and the knowledge base has 16 documents, you MUST list all 16 documents, not 8 or 9.
+- If asked "मंगलकार्यालय परवाना साठी कागदपत्रे" and the knowledge base has 16 documents, you MUST list all 16 documents in Marathi.
+- Always count and verify: "Here are all 16 documents required for Marriage Hall License: [list all 16]"
+- Never say "some documents include" or "key documents are" - always say "ALL documents required are" and list every single one.
+
 MUNICIPAL SERVICES DATA:
 {self.municipal_data}
 
 {conversation_context}
 
 USER QUESTION: {user_message}
+
+**FINAL REMINDER**: When listing documents, requirements, or processes, you MUST include ALL items from the knowledge base. Do not summarize, truncate, or provide partial lists. If the data contains 16 documents, list all 16. If it contains 3 documents, list all 3. Count the items if needed to ensure completeness.
 
 Please provide a friendly, concise response that directly answers their question."""
 
@@ -320,6 +376,22 @@ Please provide a friendly, concise response that directly answers their question
         
         # For simplicity, return the service IDs found
         return list(set(service_ids))
+    
+    def validate_document_completeness(self, user_message, response_text):
+        """Validate that document responses are complete"""
+        # Check if the query is about documents
+        document_keywords = ['document', 'कागदपत्र', 'कागद', 'पत्र', 'required', 'लागणारी', 'लागतात']
+        if not any(keyword.lower() in user_message.lower() for keyword in document_keywords):
+            return response_text
+        
+        # Count documents in response
+        document_count = response_text.count('- ')
+        
+        # If response has documents but seems incomplete (less than 5), add a note
+        if document_count > 0 and document_count < 5:
+            response_text += f"\n\nNote: Please ensure you have all required documents. If you need the complete list, please ask again."
+        
+        return response_text
     
     async def get_response(self, user_message, conversation_history=None):
         """Get response from Gemini API"""
@@ -407,9 +479,12 @@ Please provide a friendly, concise response that directly answers their question
                 is_tracking = "TRACK_APPLICATION_REQUEST" in response.text
                 clean_response = response.text.replace("TRACK_APPLICATION_REQUEST", "").strip()
                 
-                service_refs = self.extract_service_references(clean_response)
+                # Validate document completeness
+                validated_response = self.validate_document_completeness(user_message, clean_response)
+                
+                service_refs = self.extract_service_references(validated_response)
                 result = {
-                    "response": clean_response,
+                    "response": validated_response,
                     "service_references": service_refs
                 }
                 
