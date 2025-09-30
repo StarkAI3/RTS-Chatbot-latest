@@ -526,6 +526,11 @@
         let isRTSChatbotOpen = false;
         let rtsChatHistory = [];
 
+        // Helper: API base from current origin
+        function rtsApi(path) {
+            return `${window.location.origin}${path}`;
+        }
+
         // Toggle chatbot visibility
         function toggleRTSChatbot() {
             console.log('Toggle button clicked! Current state:', isRTSChatbotOpen);
@@ -545,7 +550,7 @@
                 messages.forEach(msg => msg.remove());
                 
                 // Clear backend memory
-                fetch('http://localhost:8000/api/clear-memory', {
+                fetch(rtsApi('/api/clear-memory'), {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -649,8 +654,8 @@
             // Process lines to detect and format lists
             const processedLines = lines.map(line => {
                 // Check if line starts with dash (bullet point)
-                if (line.trim().match(/^-\s+(.+)$/)) {
-                    const content = line.trim().replace(/^-\s+/, '');
+                if (line.trim().match(/^\-\s+(.+)$/)) {
+                    const content = line.trim().replace(/^\-\s+/, '');
                     return `<li>${content}</li>`;
                 }
                 // Check if line starts with number (numbered list)
@@ -802,7 +807,7 @@
         // Generate AI response from backend RAG model
         async function generateRTSResponse(userMessage) {
             // Call your FastAPI backend
-            const response = await fetch('http://localhost:8000/chat', {
+            const response = await fetch(rtsApi('/chat'), {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
