@@ -1903,7 +1903,7 @@
                 "application link / url": "http://115.124.97.182:8085/RTSUATNEW/uploadDocuments?pamId=197"
             },
             {
-                "Service": "PT5 - New Taxation Service / PT1 - New Taxation Service",
+                "Service": "PT1 - New Taxation Service / PT1 - New Taxation Service",
                 "service_id": "service-198",
                 "description": "This service is for registering a newly constructed or previously un-assessed property into the municipal tax records. It is the first step for a property owner to enter the property tax system.",
                 "Documents Required": "No Documents are required",
