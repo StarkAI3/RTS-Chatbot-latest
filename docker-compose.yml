@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    container_name: RTS-chatbot
+    ports:
+      - "8086:8086"
+    env_file:
+      - .env
+    restart: unless-stopped
+    # Optional: for local dev hot reload (commented by default)
+    # volumes:
+    #   - .:/app

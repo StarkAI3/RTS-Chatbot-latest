@@ -6,6 +6,16 @@
     <title>RTS Saathi</title>
     <style>
         /* RTS Chatbot Widget Styles */
+        :root {
+            --rts-primary: #d71920; /* PMC red */
+            --rts-primary-dark: #b1151a;
+            --rts-primary-100: #fdecee;
+            --rts-primary-200: #f9d6d8;
+            --rts-text-dark: #212529;
+            --rts-text-muted: #666666;
+            --rts-border: #e0e0e0;
+            --rts-shadow: rgba(215, 25, 32, 0.25);
+        }
         .rts-chatbot-widget {
             position: fixed;
             bottom: 20px;
@@ -17,20 +27,21 @@
         .rts-floating-btn {
             width: 70px;
             height: 70px;
-            background: linear-gradient(135deg, #c77dff 100%);
+            background: var(--rts-primary);
             border: none;
             border-radius: 50%;
             color: white;
             font-size: 28px;
             cursor: pointer;
-            box-shadow: 0 4px 20px rgba(199, 125, 255, 0.3);
+            box-shadow: 0 4px 20px var(--rts-shadow);
             transition: all 0.3s ease;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        .midc-floating-btn:hover {
+        .midc-floating-btn:hover,
+        .rts-floating-btn:hover {
             transform: scale(1.1);
             box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
         }
@@ -66,7 +77,7 @@
         }
 
         .rts-chatbot-header {
-            background: linear-gradient(135deg, #c77dff 100%);
+            background: var(--rts-primary);
             color: white;
             padding: 20px;
             display: flex;
@@ -167,21 +178,21 @@
         }
 
         .rts-message.assistant {
-            background: linear-gradient(135deg, #f0e6ff 0%, #e1c3ff 100%);
-            color: #8b5a9b;
+            background: var(--rts-primary-100);
+            color: var(--rts-text-dark);
             align-self: flex-start;
             border-bottom-left-radius: 8px;
         }
 
         .rts-message.user {
-            background: linear-gradient(135deg, #8b5a9b 0%, #a76bb0 100%);
+            background: linear-gradient(135deg, var(--rts-primary) 0%, var(--rts-primary-dark) 100%);
             color: white;
             align-self: flex-end;
             border-bottom-right-radius: 8px;
         }
 
         .rts-message a {
-            color: #c77dff;
+            color: var(--rts-primary);
             text-decoration: underline;
             font-weight: 500;
             transition: all 0.2s ease;
@@ -189,24 +200,24 @@
         }
 
         .rts-message a:hover {
-            color: #b366ff;
+            color: var(--rts-primary-dark);
             text-decoration: none;
-            background-color: rgba(199, 125, 255, 0.1);
+            background-color: var(--rts-primary-100);
             padding: 1px 2px;
             border-radius: 2px;
         }
 
         .rts-message.user a {
-            color: #e1c3ff;
+            color: #ffe2e3;
             text-decoration: underline;
             transition: all 0.2s ease;
             word-break: break-all;
         }
 
         .rts-message.user a:hover {
-            color: #f0e6ff;
+            color: #ffffff;
             text-decoration: none;
-            background-color: rgba(225, 195, 255, 0.2);
+            background-color: rgba(255, 255, 255, 0.15);
             padding: 1px 2px;
             border-radius: 2px;
         }
@@ -245,7 +256,7 @@
             scrollbar-width: thin;
             scrollbar-color: #ccc transparent;
             background: #f8f9fa;
-            border-top: 1px solid #e0e0e0;
+            border-top: 1px solid var(--rts-border);
         }
 
         .rts-sample-questions::-webkit-scrollbar {
@@ -263,11 +274,11 @@
 
         .rts-sample-question {
             background: white;
-            border: 2px solid #e0e0e0;
+            border: 2px solid var(--rts-border);
             border-radius: 25px;
             padding: 10px 18px;
             font-size: 13px;
-            color: #666;
+            color: var(--rts-text-muted);
             cursor: pointer;
             white-space: nowrap;
             transition: all 0.3s ease;
@@ -276,17 +287,17 @@
         }
 
         .rts-sample-question:hover {
-            background: #c77dff;
+            background: var(--rts-primary);
             color: white;
-            border-color: #c77dff;
+            border-color: var(--rts-primary);
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(199, 125, 255, 0.3);
+            box-shadow: 0 4px 12px var(--rts-shadow);
         }
 
         .rts-input-area {
             padding: 20px;
             background: white;
-            border-top: 1px solid #e0e0e0;
+            border-top: 1px solid var(--rts-border);
             display: flex;
             gap: 12px;
             align-items: center;
@@ -295,7 +306,7 @@
         .rts-message-input {
             flex: 1;
             padding: 14px 18px;
-            border: 2px solid #e0e0e0;
+            border: 2px solid var(--rts-border);
             border-radius: 25px;
             font-size: 14px;
             outline: none;
@@ -303,12 +314,12 @@
         }
 
         .rts-message-input:focus {
-            border-color: #8b5a9b;
-            box-shadow: 0 0 0 3px rgba(139, 90, 155, 0.1);
+            border-color: var(--rts-primary);
+            box-shadow: 0 0 0 3px rgba(215, 25, 32, 0.1);
         }
 
         .rts-send-btn {
-            background: linear-gradient(135deg, #c77dff 100%);
+            background: linear-gradient(135deg, var(--rts-primary) 0%, var(--rts-primary-dark) 100%);
             color: white;
             border: none;
             border-radius: 25px;
@@ -324,7 +335,7 @@
 
         .rts-send-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(199, 125, 255, 0.3);
+            box-shadow: 0 4px 15px var(--rts-shadow);
         }
 
         .rts-send-btn:active {
@@ -335,10 +346,10 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            color: #666;
+            color: var(--rts-text-muted);
             font-style: italic;
             padding: 14px 18px;
-            background: #f0e6ff;
+            background: var(--rts-primary-100);
             border-radius: 20px;
             max-width: 85%;
             align-self: flex-start;
@@ -375,14 +386,14 @@
         .rts-welcome-message {
             text-align: center;
             padding: 25px 20px;
-            color: #666;
+            color: var(--rts-text-muted);
             background: white;
             border-radius: 15px;
             margin-bottom: 10px;
         }
 
         .rts-welcome-message h3 {
-            color: #8b5a9b;
+            color: var(--rts-primary);
             margin-bottom: 12px;
             font-size: 18px;
         }
@@ -474,32 +485,17 @@
                 <div class="rts-sample-question" onclick="askRTSQuestion('मालमत्ता कर भरणा कसा करावा?')">
                     मालमत्ता कर भरणा
                 </div>
-                <div class="rts-sample-question" onclick="askRTSQuestion('व्यापार परवाना कसा मिळवावा?')">
-                    व्यापार परवाना
-                </div>
                 <div class="rts-sample-question" onclick="askRTSQuestion('मृत्यू प्रमाणपत्र कसे मिळवावे?')">
                     मृत्यू प्रमाणपत्र
                 </div>
-                <div class="rts-sample-question" onclick="askRTSQuestion('पाणी बिल ऑनलाइन कसे भरावे?')">
-                    पाणी बिल भरणा
-                </div>
-                <div class="rts-sample-question" onclick="askRTSQuestion('इमारत परवाना कसा मिळवावा?')">
-                    इमारत परवाना
-                </div>
-                <div class="rts-sample-question" onclick="askRTSQuestion('तक्रार कशी नोंदवावी?')">
-                    तक्रार नोंदवणे
-                </div>
                 <div class="rts-sample-question" onclick="askRTSQuestion('PMC सेवा कोणत्या उपलब्ध आहेत?')">
-                    PMC सेवा
+                    PMC सेवानवीन कर भरणा
                 </div>
                 <div class="rts-sample-question" onclick="askRTSQuestion('What documents do I need for birth certificate?')">
                     Birth certificate documents
                 </div>
                 <div class="rts-sample-question" onclick="askRTSQuestion('How to apply for property tax assessment?')">
                     Property tax assessment
-                </div>
-                <div class="rts-sample-question" onclick="askRTSQuestion('How to get trade license?')">
-                    Trade license
                 </div>
                 <div class="rts-sample-question" onclick="askRTSQuestion('What is the process for building permission?')">
                     Building permission process
