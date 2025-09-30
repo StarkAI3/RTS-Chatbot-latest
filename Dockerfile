@@ -25,6 +25,6 @@ COPY ["json data", "/app/json data"]
 EXPOSE 8086
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
-  CMD python -c "import urllib.request,sys,ssl; ctx=ssl.create_default_context(); ctx.check_hostname=False; ctx.verify_mode=ssl.CERT_NONE; resp=urllib.request.urlopen('http://127.0.0.1:8000/health', context=ctx, timeout=3); sys.exit(0 if resp.getcode()==200 else 1)" || exit 1
+  CMD python -c "import urllib.request,sys,ssl; ctx=ssl.create_default_context(); ctx.check_hostname=False; ctx.verify_mode=ssl.CERT_NONE; resp=urllib.request.urlopen('http://127.0.0.1:8086/health', context=ctx, timeout=3); sys.exit(0 if resp.getcode()==200 else 1)" || exit 1
 
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8086"]
